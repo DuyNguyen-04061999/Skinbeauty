@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  src: url(./font/TuesdayNight-Regular.otf);
+  font-family: TuesdayNight;
+}
+
+@font-face {
+  src: url(./font/Melodrama-Medium.ttf);
+  font-family: MelodramaMedium;
+}

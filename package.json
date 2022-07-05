@@ -1,0 +1,25 @@
+{
+  "name": "Skinn-Beauty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
+    "start:dev":"live-server public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuyNguyen-04061999/Skinn-Beauty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuyNguyen-04061999/Skinn-Beauty/issues"
+  },
+  "homepage": "https://github.com/DuyNguyen-04061999/Skinn-Beauty#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "tailwindcss": "^3.1.4"
+  }
+}
