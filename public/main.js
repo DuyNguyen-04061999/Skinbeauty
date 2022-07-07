@@ -88,7 +88,7 @@ window.addEventListener("load", function () {
   }
 
   function handleClickClose(e) {
-    cartStatus.style = `opacity: 0; visibility: hidden; transform: translateX(100%)`;
+    cartStatus.style = `opacity: 0; visibility: hidden; transform: translateX(25%)`;
     overlay.style = `opacity: 0; visibility: hidden;`;
   }
 

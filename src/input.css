@@ -50,11 +50,11 @@ h6 {
 @layer base {
   @font-face {
     font-family: "TuesdayNight";
-    src: url("/font/TuesdayNight-Regular.otf");
+    src: url("./font/TuesdayNight-Regular.otf");
   }
   @font-face {
-    src: url("/font/Melodrama-Medium.ttf");
     font-family: "MelodramaMedium";
+    src: url("/font/Melodrama-Medium.ttf");
   }
 }
 
