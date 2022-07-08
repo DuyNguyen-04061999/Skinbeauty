@@ -426,7 +426,7 @@ video {
 @font-face {
   font-family: "MelodramaMedium";
 
-  src: url("/font/Melodrama-Medium.ttf");
+  src: url("./font/Melodrama-Medium.ttf");
 }
 
 *, ::before, ::after {
@@ -610,12 +610,32 @@ video {
   bottom: 0px;
 }
 
+.top-\[70\%\] {
+  top: 70%;
+}
+
+.-right-\[20\%\] {
+  right: -20%;
+}
+
+.z-\[2\] {
+  z-index: 2;
+}
+
 .z-\[9999999\] {
   z-index: 9999999;
 }
 
 .z-10 {
   z-index: 10;
+}
+
+.z-\[1\] {
+  z-index: 1;
+}
+
+.z-\[-1\] {
+  z-index: -1;
 }
 
 .mx-auto {
@@ -637,6 +657,14 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-\[30px\] {
+  margin-bottom: 30px;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -673,6 +701,14 @@ video {
   height: fit-content;
 }
 
+.h-\[750px\] {
+  height: 750px;
+}
+
+.min-h-\[500px\] {
+  min-height: 500px;
+}
+
 .w-11 {
   width: 2.75rem;
 }
@@ -691,6 +727,16 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .min-w-\[200px\] {
@@ -712,6 +758,12 @@ video {
 
 .translate-x-1\/4 {
   --tw-translate-x: 25%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-\[2\] {
+  --tw-scale-x: 2;
+  --tw-scale-y: 2;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -793,6 +845,10 @@ video {
   border-radius: 5px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border-\[1px\] {
   border-width: 1px;
 }
@@ -820,6 +876,11 @@ video {
 
 .border-transparent {
   border-color: transparent;
+}
+
+.border-color-border {
+  --tw-border-opacity: 1;
+  border-color: rgb(218 206 198 / var(--tw-border-opacity));
 }
 
 .border-b-\[\#E7DED8\] {
@@ -922,12 +983,28 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.font-sans {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.pt-\[150px\] {
+  padding-top: 150px;
+}
+
+.pl-\[50px\] {
+  padding-left: 50px;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .font-\[\'MelodramaMedium\'\] {
   font-family: 'MelodramaMedium';
+}
+
+.font-Melodrama {
+  font-family: MelodramaMedium;
+}
+
+.font-TuesdayNight {
+  font-family: TuesdayNight;
 }
 
 .text-\[18px\] {
@@ -951,6 +1028,14 @@ video {
   font-size: 16px;
 }
 
+.text-\[90px\] {
+  font-size: 90px;
+}
+
+.text-\[130px\] {
+  font-size: 130px;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -959,8 +1044,24 @@ video {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .capitalize {
   text-transform: capitalize;
+}
+
+.leading-\[126px\] {
+  line-height: 126px;
+}
+
+.leading-\[182px\] {
+  line-height: 182px;
+}
+
+.leading-\[19\.6px\] {
+  line-height: 19.6px;
 }
 
 .text-sub-text {
@@ -1003,6 +1104,34 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
+}
+
+.duration-700 {
+  transition-duration: 700ms;
+}
+
+.ease-linear {
+  transition-timing-function: linear;
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scrollbar-hide {
@@ -1061,6 +1190,10 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+html {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .npd-header-nav-item {
@@ -1168,6 +1301,11 @@ h6 {
   background-color: transparent;
 }
 
+.hover\:border-sub-text:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(104 81 63 / var(--tw-border-opacity));
+}
+
 .hover\:border-b-sub-text:hover {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(104 81 63 / var(--tw-border-opacity));
@@ -1176,6 +1314,16 @@ h6 {
 .hover\:bg-black:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-sub-text:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(104 81 63 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (max-width: 1280px) {
@@ -1198,6 +1346,10 @@ h6 {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:leading-\[100px\] {
+    line-height: 100px;
   }
 }
 
@@ -1233,6 +1385,10 @@ h6 {
 
   .md\:h-0 {
     height: 0px;
+  }
+
+  .md\:h-\[500px\] {
+    height: 500px;
   }
 
   .md\:w-full {
@@ -1278,9 +1434,25 @@ h6 {
     padding-right: 1.25rem;
   }
 
+  .md\:pl-0 {
+    padding-left: 0px;
+  }
+
+  .md\:pt-\[100px\] {
+    padding-top: 100px;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-\[60px\] {
+    font-size: 60px;
+  }
+
+  .md\:leading-\[70px\] {
+    line-height: 70px;
   }
 
   .md\:shadow-\[rgba\(100\2c 100\2c 111\2c 0\.2\)_0px_7px_29px_0px\] {
@@ -1297,6 +1469,10 @@ h6 {
 }
 
 @media (max-width: 640px) {
+  .sm\:h-\[400px\] {
+    height: 400px;
+  }
+
   .sm\:w-full {
     width: 100%;
   }
@@ -1304,6 +1480,26 @@ h6 {
   .sm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .sm\:pt-\[50px\] {
+    padding-top: 50px;
+  }
+
+  .sm\:text-\[42px\] {
+    font-size: 42px;
+  }
+
+  .sm\:text-\[40px\] {
+    font-size: 40px;
+  }
+
+  .sm\:leading-\[50px\] {
+    line-height: 50px;
+  }
+
+  .sm\:leading-\[56px\] {
+    line-height: 56px;
   }
 }
 
@@ -1327,5 +1523,11 @@ h6 {
 
   .group:hover .desk\:group-hover\:opacity-100 {
     opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\'\:absolute {
+    position: absolute;
   }
 }

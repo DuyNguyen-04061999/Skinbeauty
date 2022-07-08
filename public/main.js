@@ -10,6 +10,7 @@ window.addEventListener("load", function () {
   let fixedHeight;
   function start() {
     handleSetHeightProduct();
+    handleLoadSliderImg();
   }
   function handleMenuBar(e) {
     navList.style.overflow = "hidden";
@@ -112,6 +113,23 @@ window.addEventListener("load", function () {
   }
   window.onload = handleSetHeightProduct;
   window.onresize = handleSetHeightProduct;
+  // ================ End of Header & Cart UI ======================
+
+  // =================== Slider ======================
+  const sliderWrapper = $("#npd-slider-img-wrapper");
+  const sliderImg = $("#npd-slider-img");
+
+  window.onscroll = function (e) {
+    const scroll = window.pageYOffset;
+    sliderImg.style.width = `${parseInt(100 + scroll / 20)}%`;
+    sliderImg.style.height = `${parseInt(100 + scroll / 20)}%`;
+    console.log(sliderImg.style.width);
+  };
+  function handleLoadSliderImg() {
+    setTimeout(() => {
+      sliderWrapper.style = `transform: scale(1); visibility: visible; opacity: 1`;
+    }, 1000);
+  }
+
   start();
-  // ================ Header & Cart UI ======================
 });
