@@ -91,7 +91,9 @@ html {
 .npd-cart-empty {
   @apply grid place-items-center text-[14px] text-black;
 }
-
+.npd-btn {
+  @apply block py-3 px-5 leading-[19.6px] text-sub-text border-color-border rounded-[50%] border-[1px] w-fit text-[14px] border-solid hover:bg-sub-text hover:text-white hover:border-sub-text transition-all duration-500 bg-color-bg;
+}
 /* =============================== End of Header ==================================== */
 
 /* =============================== Slider ============================================ */
