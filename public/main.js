@@ -115,16 +115,37 @@ window.addEventListener("load", function () {
   window.onresize = handleSetHeightProduct;
   // ================ End of Header & Cart UI ======================
 
-  // =================== Slider ======================
+  // =================== Slider & About ======================
   const sliderWrapper = $("#npd-slider-img-wrapper");
   const sliderImg = $("#npd-slider-img");
-
-  window.onscroll = function (e) {
+  const aboutImgs = $$(".npd-about-img");
+  console.log(aboutImgs);
+  function handleChangeSliderSize(e) {
     const scroll = window.pageYOffset;
-    sliderImg.style.width = `${parseInt(100 + scroll / 20)}%`;
-    sliderImg.style.height = `${parseInt(100 + scroll / 20)}%`;
-    console.log(sliderImg.style.width);
-  };
+    sliderImg.style.width = `${parseInt(100 + scroll / 50)}%`;
+    sliderImg.style.height = `${parseInt(100 + scroll / 50)}%`;
+  }
+  let oldValue = 0;
+  let newValue = 0;
+
+  window.addEventListener("scroll", function (e) {
+    handleChangeSliderSize();
+
+    newValue = this.pageYOffset;
+    if (newValue > oldValue) {
+      // up
+      [...aboutImgs].forEach((aboutImg) => {
+        aboutImg.style.transform = `translateY(${-newValue / 100}%)`;
+      });
+    } else {
+      //  down
+      [...aboutImgs].forEach((aboutImg) => {
+        aboutImg.style.transform = `translateY(${newValue / 100}%)`;
+      });
+    }
+    oldValue = newValue;
+  });
+
   function handleLoadSliderImg() {
     setTimeout(() => {
       sliderWrapper.style = `transform: scale(1); visibility: visible; opacity: 1`;
