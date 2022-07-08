@@ -47,6 +47,10 @@ h6 {
   overflow-wrap: break-word;
 }
 
+html {
+  @apply font-sans;
+}
+
 @layer base {
   @font-face {
     font-family: "TuesdayNight";
@@ -54,7 +58,7 @@ h6 {
   }
   @font-face {
     font-family: "MelodramaMedium";
-    src: url("/font/Melodrama-Medium.ttf");
+    src: url("./font/Melodrama-Medium.ttf");
   }
 }
 

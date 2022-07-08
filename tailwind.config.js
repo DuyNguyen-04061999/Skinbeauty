@@ -5,12 +5,15 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
+      'Melodrama': ["MelodramaMedium"],
+      'TuesdayNight': ["TuesdayNight"],
     },
     extend: {
       colors: {
         "color-bg": "#F1EBE7",
         "color-sub-bg": "#e7ded8",
         "sub-text": "#68513F",
+        "color-border":"#dacec6",
       },
     },
     screens: {
@@ -29,10 +32,11 @@ module.exports = {
       sm: { max: "640px" },
       // => @media (max-width: 640px) { ... }
       desk: { raw: "(min-width: 769px)" },
+      "lg'": { raw: "(min-width: 1024px)" },
     },
   },
   plugins: [
-    require('tailwind-scrollbar-hide') // add this to your plugins
+    require("tailwind-scrollbar-hide"), // add this to your plugins
     // ...
-  ]
+  ],
 };
