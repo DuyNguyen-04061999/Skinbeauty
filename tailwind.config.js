@@ -32,8 +32,9 @@ module.exports = {
       sm: { max: "640px" },
       // => @media (max-width: 640px) { ... }
       desk: { raw: "(min-width: 769px)" },
-      "lg'": { raw: "(min-width: 1024px)" },
+      lg2: { raw: "(min-width: 1024px)" },
       ml: { raw: "(max-width: 991px)" },
+      es: { raw: "(max-width: 479px)" },
     },
   },
   plugins: [
