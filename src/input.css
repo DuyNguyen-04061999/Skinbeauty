@@ -91,9 +91,24 @@ html {
 .npd-cart-empty {
   @apply grid place-items-center text-[14px] text-black;
 }
-.npd-btn {
-  @apply block py-3 px-5 leading-[19.6px] text-sub-text border-color-border rounded-[50%] border-[1px] w-fit text-[14px] border-solid hover:bg-sub-text hover:text-white hover:border-sub-text transition-all duration-500 bg-color-bg;
-}
 /* =============================== End of Header ==================================== */
 
 /* =============================== Slider ============================================ */
+.npd-btn {
+  @apply block py-3 px-5 leading-[19.6px] text-sub-text border-color-border rounded-[50%] border-[1px] w-fit text-[14px] border-solid hover:bg-sub-text hover:text-white hover:border-sub-text transition-all duration-500 bg-color-bg;
+}
+
+/* =============== About ====================== */
+
+.npd-about-img {
+  @apply  hidden lg2:block transition-all duration-1000 translate-y-0 ease-linear absolute -z-10 rounded-lg overflow-hidden;
+}
+
+/* ================ Products ================= */
+.npd-title-Melo {
+  @apply font-Melodrama text-[70px] md:text-[44px] font-medium leading-[98px] md:leading-[61.6px] mb-[10px];
+}
+
+.npd-title-Tue {
+  @apply font-TuesdayNight text-sub-text text-[80px] md:text-[50px]  leading-[112px] md:leading-[70px];
+}

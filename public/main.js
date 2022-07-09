@@ -119,6 +119,7 @@ window.addEventListener("load", function () {
   const sliderWrapper = $("#npd-slider-img-wrapper");
   const sliderImg = $("#npd-slider-img");
   const aboutImgs = $$(".npd-about-img");
+  console.log(aboutImgs)
   console.log(aboutImgs);
   function handleChangeSliderSize(e) {
     const scroll = window.pageYOffset;
