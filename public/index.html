@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/magnify.css">
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/output.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body class="bg-color-bg">
@@ -172,24 +179,19 @@
                 <a href="" class="npd-btn mx-auto">Shop all</a>
             </div>
 
-            <div
-                class="npd-about-img absolute top-[20%] left-[5%]">
+            <div class="npd-about-img absolute top-[20%] left-[5%]">
                 <img src="./images/about_1.jpg" alt="" class="">
             </div>
-            <div
-                class="npd-about-img absolute top-[9%] right-[16%] ">
+            <div class="npd-about-img absolute top-[9%] right-[16%] ">
                 <img src="./images/about_2.jpg" alt="" class="">
             </div>
-            <div
-                class="npd-about-img absolute bottom-[14%] left-[10%]">
+            <div class="npd-about-img absolute bottom-[14%] left-[10%]">
                 <img src="./images/about_3.jpg" alt="" class="">
             </div>
-            <div
-                class="npd-about-img absolute bottom-[9%] right-[12%]">
+            <div class="npd-about-img absolute bottom-[9%] right-[12%]">
                 <img src="./images/about_4.jpg" alt="" class="">
             </div>
-            <div
-                class="npd-about-img absolute top-[40%] right-[5%]">
+            <div class="npd-about-img absolute top-[40%] right-[5%]">
                 <img src="./images/about_5.jpg" alt="" class="">
             </div>
 
@@ -333,20 +335,105 @@
         <!-- end of products -->
 
         <!-- fearture -->
-        <div class="feature">
-
+        <div class="grid grid-cols-2 md:grid-cols-1 gap-[100px] ml:gap-10">
+            <div class="rounded-[10px] overflow-hidden">
+                <img src="./images/feature_1.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center">
+                <h2 class="npd-title-Tue">Feature</h2>
+                <h2 class="npd-title-Melo">Innovation-led Products</h2>
+                <p class="leading-[19.6px] text-[14px] mt-[15px] mb-[50px] md:mb-5 text-black">Temporibus autem
+                    quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
+                    repudiandae sint.</p>
+                <a href="" class="npd-btn mx-auto">Read more</a>
+            </div>
         </div>
         <!-- end of feature -->
 
         <!-- brand -->
-        <div class="brand">
-
+        <div class="py-[200px] ml:py-20 md:py-[60px] text-center w-[65%] md:w-full mx-auto">
+            <div class="mb-20">
+                <p data-brand="1" class="npd-brand-item active">"There are
+                    many variations of passages of Lorem Ipsum
+                    available, but the majority have in some
+                    form, by injected humour, or randomised words which"</p>
+                <p data-brand="2" class="npd-brand-item">"Generate
+                    Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from
+                    repetition, injected humour, or non-characteristic"</p>
+                <p data-brand="3" class="npd-brand-item">"Nam libero
+                    tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat
+                    facere possimus, omnis voluptas assumenda"</p>
+                <p data-brand="4" class="npd-brand-item">"Shrinking
+                    from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when
+                    our power of choice is untrammelled and when nothing"</p>
+            </div>
+            <div class="flex justify-center items-center flex-wrap sm:gap-[5px]">
+                <div class="h-[40px] py-[9px] px-[30px] sm:px-[10px]">
+                    <img data-brand="1" src="./images/brand1.svg" alt="" class="npd-brand-img active">
+                </div>
+                <div class="h-[40px] py-[9px] px-[30px] sm:px-[10px]">
+                    <img data-brand="2" src="./images/brand2.svg" alt="" class="npd-brand-img">
+                </div>
+                <div class="h-[40px] py-[9px] px-[30px] sm:px-[10px]">
+                    <img data-brand="3" src="./images/brand3.svg" alt="" class="npd-brand-img">
+                </div>
+                <div class="h-[40px] py-[9px] px-[30px] sm:px-[10px]">
+                    <img data-brand="4" src="./images/brand4.svg" alt="" class="npd-brand-img">
+                </div>
+            </div>
         </div>
         <!-- end of brand -->
 
         <!-- slideImage -->
-        <div class="slideimg">
+        <div class="npd-slide-img">
+            <div class="swiper ml2:!mx-[-50px] ml:hidden">
+                <div class="swiper-wrapper !ml:flex-wrap ml:gap-[15px]">
+                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
+                        <img src="./images/swiper1.jpg" data-magnify-src="./images/swiper1.jpg" alt=""
+                            class="npd-zoom-img w-full h-full object-cover zoom">
+                    </div>
+                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
+                        <img src="./images/swiper2.jpg" data-magnify-src="./images/swiper2.jpg" alt=""
+                            class="npd-zoom-img w-full h-full object-cover zoom">
+                    </div>
+                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
+                        <img src="./images/swiper3.jpg" data-magnify-src="./images/swiper3.jpg" alt=""
+                            class="npd-zoom-img w-full h-full object-cover zoom">
+                    </div>
+                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
+                        <img src="./images/swiper4.jpg" data-magnify-src="./images/swiper4.jpg" alt=""
+                            class="npd-zoom-img w-full h-full object-cover zoom">
+                    </div>
+                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
+                        <img src="./images/swiper5.jpg" data-magnify-src="./images/swiper5.jpg" alt=""
+                            class="npd-zoom-img w-full h-full object-cover zoom">
+                    </div>
+                </div>
+            </div>
 
+            <div class="npd-slide-small flex flex-wrap ml2:hidden">
+                <div class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px]">
+                    <img src="./images/swiper1.jpg" data-magnify-src="./images/swiper1.jpg" alt=""
+                        class="w-ful h-full zoom">
+                </div>
+                <div class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px]">
+                    <img src="./images/swiper2.jpg" data-magnify-src="./images/swiper2.jpg" alt=""
+                        class="w-ful h-full zoom">
+                </div>
+                <div class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px]">
+                    <img src="./images/swiper3.jpg" data-magnify-src="./images/swiper3.jpg" alt=""
+                        class="w-ful h-full zoom">
+                </div>
+                <div class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px]">
+                    <img src="./images/swiper4.jpg" data-magnify-src="./images/swiper4.jpg" alt=""
+                        class="w-ful h-full zoom">
+                </div>
+                <div
+                    class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px] ml:ml-[25%] es:ml-0">
+                    <img src="./images/swiper5.jpg" data-magnify-src="./images/swiper5.jpg" alt=""
+                        class="w-ful h-full zoom">
+                </div>
+            </div>
         </div>
         <!-- end of slideimg -->
 
@@ -358,7 +445,57 @@
 
         <footer class="min-h-[500px]"></footer>
     </div>
+    <script src="./jquery.magnify.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.zoom').magnify({
+                speed: 100,
+                magnifiedWidth: 650,
+                magnifiedHeight: 650,
+                timeout: 2,
+            });
+        });
+    </script>
+    <script>
+        (function () {
+            "use-strict";
+            let swiper;
+            function enableSwiper() {
+                swiper = new Swiper(".swiper", {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                    mousewheel: true,
+                    invert: true,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        992: {
+                            spaceBetween: 0,
+                        }
+                    }
+                });
+            }
+
+            function WidthChange(breakpoint) {
+                if (breakpoint.matches) {
+                    return enableSwiper();
+                } else {
+                    if (swiper !== undefined) swiper.destroy(true, true);
+                }
+            }
+
+            if (matchMedia) {
+                const breakpoint = window.matchMedia("(min-width: 992px)");
+                breakpoint.addListener(WidthChange);
+                WidthChange(breakpoint);
+            }
+        })()
+    </script>
 </body>
 
 </html>

@@ -119,8 +119,6 @@ window.addEventListener("load", function () {
   const sliderWrapper = $("#npd-slider-img-wrapper");
   const sliderImg = $("#npd-slider-img");
   const aboutImgs = $$(".npd-about-img");
-  console.log(aboutImgs)
-  console.log(aboutImgs);
   function handleChangeSliderSize(e) {
     const scroll = window.pageYOffset;
     sliderImg.style.width = `${parseInt(100 + scroll / 50)}%`;
@@ -151,6 +149,41 @@ window.addEventListener("load", function () {
     setTimeout(() => {
       sliderWrapper.style = `transform: scale(1); visibility: visible; opacity: 1`;
     }, 1000);
+  }
+
+  // ================= brand =========================
+  const brandImgs = $$(".npd-brand-img");
+  const brandContent = $$(".npd-brand-item");
+
+  [...brandImgs].forEach((img) => {
+    img.addEventListener("click", function (e) {
+      [...brandImgs].forEach((img) => img.classList.remove("active"));
+      e.target.classList.add("active");
+      const contentNum = e.target.dataset.brand;
+      [...brandContent].forEach((item) => {
+        item.classList.remove("active");
+        if (item.dataset.brand === contentNum) {
+          item.classList.add("active");
+        }
+      });
+    });
+  });
+  // ============================ swiper & zoom ======================================
+  const zoomImgs = $$(".npd-zoom-img");
+  if (matchMedia) {
+    const mq = window.matchMedia("(max-width: 991px)");
+    mq.addListener(WidthChange2);
+    WidthChange2(mq);
+  }
+
+  // media query change
+  function WidthChange2(mq) {
+    if (mq.matches) {
+      [...zoomImgs].forEach((img) => img.classList.remove("zoom"));
+    } else {
+      // window width is less than 500px
+      [...zoomImgs].forEach((img) => img.classList.add("zoom"));
+    }
   }
 
   start();

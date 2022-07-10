@@ -37,6 +37,7 @@ select {
   font: inherit;
   outline: none;
 }
+
 p,
 h1,
 h2,
@@ -101,7 +102,7 @@ html {
 /* =============== About ====================== */
 
 .npd-about-img {
-  @apply  hidden lg2:block transition-all duration-1000 translate-y-0 ease-linear absolute -z-10 rounded-lg overflow-hidden;
+  @apply hidden lg2:block transition-all duration-1000 translate-y-0 ease-linear absolute -z-10 rounded-lg overflow-hidden;
 }
 
 /* ================ Products ================= */
@@ -111,4 +112,20 @@ html {
 
 .npd-title-Tue {
   @apply font-TuesdayNight text-sub-text text-[80px] md:text-[50px]  leading-[112px] md:leading-[70px];
+}
+
+/* ====================== brand ============================ */
+.npd-brand-item {
+  @apply text-[28px] sm:text-xl leading-[39.2px] mb-[10px] hidden transition-all duration-200 animate-appear;
+}
+
+.npd-brand-item.active {
+  @apply block;
+}
+.npd-brand-img {
+  @apply h-full w-full cursor-pointer opacity-30 hover:opacity-100 transition-all duration-300;
+}
+
+.npd-brand-img.active {
+  @apply opacity-100;
 }
