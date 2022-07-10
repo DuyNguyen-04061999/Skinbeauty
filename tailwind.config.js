@@ -5,15 +5,24 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
-      'Melodrama': ["MelodramaMedium"],
-      'TuesdayNight': ["TuesdayNight"],
+      Melodrama: ["MelodramaMedium"],
+      TuesdayNight: ["TuesdayNight"],
     },
     extend: {
       colors: {
         "color-bg": "#F1EBE7",
         "color-sub-bg": "#e7ded8",
         "sub-text": "#68513F",
-        "color-border":"#dacec6",
+        "color-border": "#dacec6",
+      },
+      animation: {
+        appear: "appear 0.5s linear",
+      },
+      keyframes: {
+        appear: {
+          "0%": { display: "none", opacity: 0 },
+          "100%": { display: "block", opacity: 1 },
+        },
       },
     },
     screens: {
@@ -34,6 +43,7 @@ module.exports = {
       desk: { raw: "(min-width: 769px)" },
       lg2: { raw: "(min-width: 1024px)" },
       ml: { raw: "(max-width: 991px)" },
+      ml2: { raw: "(min-width: 992px)" },
       es: { raw: "(max-width: 479px)" },
     },
   },
