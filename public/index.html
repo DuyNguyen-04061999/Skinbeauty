@@ -11,7 +11,6 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/magnify.css">
-    <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/output.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -385,7 +384,7 @@
         <!-- end of brand -->
 
         <!-- slideImage -->
-        <div class="npd-slide-img">
+        <div class="">
             <div class="swiper ml2:!mx-[-50px] ml:hidden">
                 <div class="swiper-wrapper !ml:flex-wrap ml:gap-[15px]">
                     <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
@@ -411,7 +410,7 @@
                 </div>
             </div>
 
-            <div class="npd-slide-small flex flex-wrap ml2:hidden">
+            <div class="flex flex-wrap ml2:hidden">
                 <div class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px]">
                     <img src="./images/swiper1.jpg" data-magnify-src="./images/swiper1.jpg" alt=""
                         class="w-ful h-full zoom">
@@ -438,13 +437,52 @@
         <!-- end of slideimg -->
 
         <!-- Skinblog -->
-        <div class="blog">
+        <div class="">
+            <h2 class="npd-title-Melo text-center mb-[10px] mt-8">
+                Skinn blog
+            </h2>
 
+            <div class="grid grid-cols-2 ml:grid-cols-1 gap-[50px]">
+                <div class="grid grid-cols-2 gap-[30px] sm:grid-cols-1">
+                    <a href="" class="">
+                        <img src="./images/blog1.jpg" alt="" class="rounded-[10px]">
+                    </a>
+                    <div class="flex flex-col justify-between">
+                        <a href=""
+                            class="font-Melodrama text-black hover:text-sub-text no-underline hover:underline text-[28px] sm:text-[30px] leading-[36.4px] transition-all duration-200 sm:text-center">
+                            Which skinceuticals vitamin c serum is right for you?
+                        </a>
+                        <a href="" class="npd-btn sm:mt-[10px] sm:mx-auto">Read more</a>
+                    </div>
+
+                </div>
+                <div class="grid grid-cols-2 gap-[30px] sm:grid-cols-1">
+                    <a href="" class="">
+                        <img src="./images/blog2.jpg" alt="" class="rounded-[10px]">
+                    </a>
+                    <div class="flex flex-col justify-between">
+                        <a href=""
+                            class="font-Melodrama text-black hover:text-sub-text no-underline hover:underline text-[28px] sm:text-[30px] leading-[36.4px] transition-all duration-200 sm:text-center">
+                            Everything you need to know about your skin
+                        </a>
+                        <a href="" class="npd-btn sm:mt-[10px] sm:mx-auto">Read more</a>
+                    </div>
+
+                </div>
+               
+                
+            </div>
         </div>
-        <!-- end of skinblog -->
-
-        <footer class="min-h-[500px]"></footer>
     </div>
+    <!-- end of skinblog -->
+
+    <footer class="min-h-[500px]"></footer>
+    </div>
+
+
+
+
+
     <script src="./jquery.magnify.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
