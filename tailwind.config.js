@@ -40,10 +40,11 @@ module.exports = {
 
       sm: { max: "640px" },
       // => @media (max-width: 640px) { ... }
-      desk: { raw: "(min-width: 769px)" },
+      xm: {'min': '1025px', 'max': '1200px'},
       lg2: { raw: "(min-width: 1024px)" },
-      ml: { raw: "(max-width: 991px)" },
       ml2: { raw: "(min-width: 992px)" },
+      ml: { raw: "(max-width: 991px)" },
+      desk: { raw: "(min-width: 769px)" },
       es: { raw: "(max-width: 479px)" },
     },
   },
