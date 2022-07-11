@@ -129,3 +129,17 @@ html {
 .npd-brand-img.active {
   @apply opacity-100;
 }
+
+/* ========================== footer ============================= */
+
+.npd-footer-text {
+  @apply text-[14px] leading-[19.6px] mb-[10px];
+}
+
+.npd-footer-link {
+  @apply text-sub-text hover:underline transition-all duration-200;
+}
+
+.npd-footer-title {
+  @apply font-Melodrama text-[28px] font-medium leading-[39.2px] mb-[30px];
+}

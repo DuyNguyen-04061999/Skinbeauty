@@ -7,7 +7,6 @@ window.addEventListener("load", function () {
   const navPages = navList.querySelector("li:last-child");
   const subNav = navPages.querySelector("ul");
 
-  let fixedHeight;
   function start() {
     handleSetHeightProduct();
     handleLoadSliderImg();
@@ -19,7 +18,6 @@ window.addEventListener("load", function () {
     navList.classList.toggle("active");
     if (navList.classList.contains("active")) {
       navList.style.height = `${navList.scrollHeight}px`;
-      fixedHeight = navList.scrollHeight;
     } else {
       navList.style.height = `${0}px`;
     }
@@ -34,8 +32,8 @@ window.addEventListener("load", function () {
         parseInt(navList.style.height) + parseInt(subNav.scrollHeight)
       }px`;
     } else {
+      navList.style.height = `${parseInt(navList.style.height) - parseInt(subNav.scrollHeight)}px`;
       subNav.style.height = `${0}px`;
-      navList.style.height = `${fixedHeight}px`;
     }
   }
 
@@ -66,10 +64,10 @@ window.addEventListener("load", function () {
       }
       document.addEventListener("click", handleClickDocument);
     } else {
+      navList.style.overflow = "visible";
       menuBar.removeEventListener("click", handleMenuBar);
       navPages.removeEventListener("click", handleClickNavPages);
       document.removeEventListener("click", handleClickDocument);
-      navList.style.overflow = "visible";
     }
   }
 
@@ -160,6 +158,7 @@ window.addEventListener("load", function () {
       [...brandImgs].forEach((img) => img.classList.remove("active"));
       e.target.classList.add("active");
       const contentNum = e.target.dataset.brand;
+      
       [...brandContent].forEach((item) => {
         item.classList.remove("active");
         if (item.dataset.brand === contentNum) {
@@ -168,23 +167,5 @@ window.addEventListener("load", function () {
       });
     });
   });
-  // ============================ swiper & zoom ======================================
-  const zoomImgs = $$(".npd-zoom-img");
-  if (matchMedia) {
-    const mq = window.matchMedia("(max-width: 991px)");
-    mq.addListener(WidthChange2);
-    WidthChange2(mq);
-  }
-
-  // media query change
-  function WidthChange2(mq) {
-    if (mq.matches) {
-      [...zoomImgs].forEach((img) => img.classList.remove("zoom"));
-    } else {
-      // window width is less than 500px
-      [...zoomImgs].forEach((img) => img.classList.add("zoom"));
-    }
-  }
-
   start();
 });
