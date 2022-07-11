@@ -102,7 +102,7 @@ html {
 /* =============== About ====================== */
 
 .npd-about-img {
-  @apply hidden lg2:block transition-all duration-1000 translate-y-0 ease-linear absolute -z-10 rounded-lg overflow-hidden;
+  @apply hidden lg2:block transition-all duration-1000 translate-y-0 ease absolute -z-10 rounded-lg overflow-hidden;
 }
 
 /* ================ Products ================= */

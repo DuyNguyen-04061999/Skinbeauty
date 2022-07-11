@@ -14,11 +14,6 @@
     <link rel="stylesheet" href="../output.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 </head>
 
 <body class="bg-color-bg">
@@ -29,7 +24,7 @@
             </a>
 
             <ul id="npd-header-navbar-item"
-                class="flex flex-row items-center md:absolute md:top-full md:left-0 md:right-0 md:flex-col md:bg-color-sub-bg md:-mx-[50px] sm:-mx-5 md:items-start md:h-0 md:overflow-hidden transition-all duration-300 md:shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]">
+                class="flex flex-row items-center md:absolute md:top-full md:left-0 md:right-0 md:flex-col md:bg-color-sub-bg md:-mx-[50px] sm:-mx-5  md:items-start md:h-0 md:overflow-hidden transition-all duration-300 md:shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]">
                 <li class="px-5 capitalize md:w-full">
                     <a href="./shopAll.html" class="npd-header-nav-item">Shop All</a>
                 </li>
@@ -106,7 +101,7 @@
                                 <div class="flex justify-center shrink-0 gap-4">
                                     <div
                                         class="w-[60px] h-[60px] rounded-[10px] overflow-hidden border-color-sub-bg border-[1px]">
-                                        <img src="../images/product_1.jpg" class="w-full h-full object-cover" alt="">
+                                        <img src="./product_1.jpg" class="w-full h-full object-cover" alt="">
                                     </div>
                                     <div class="text-[14px]">
                                         <h2 class="font-bold">Vitamin C Clay Face Mask</h2>
@@ -142,105 +137,28 @@
         </header>
 
 
-        <!-- slider -->
         <div
-            class="relative h-[750px] md:h-[500px] sm:h-[400px] pt-[150px] pl-[50px] md:pl-0 md:pt-[100px] sm:pt-[50px]">
-            <div class="relative z-[1] left-0 w-fit h-fit">
-                <h1
-                    class="font-Melodrama text-[90px] md:text-[60px] sm:text-[42px] font-medium mb-[30px] leading-[126px] lg:leading-[100px] md:leading-[70px] sm:leading-[50px]">
-                    Discover The <br> Beauty Within</h1>
-                <h1
-                    class="font-TuesdayNight text-[130px] md:text-[60px] sm:text-[40px] leading-[182px] md:leading-[70px] sm:leading-[56px] text-sub-text text-right mb-[30px] lg2:absolute h-fit w-fit top-[70%] -right-[20%] ">
-                    You</h1>
-                <a href="#" class="npd-btn">View
-                    collection</a>
-            </div>
-
-            <div id="npd-slider-img-wrapper"
-                class="absolute right-0 top-0 bottom-0 w-[70%] rounded-lg overflow-hidden z-[-1] scale-[1.5] transition-all ease-linear duration-1000 invisible opacity-0">
-                <img id="npd-slider-img" src="../images/slider1.jpg" alt=""
-                    class="h-full w-full object-cover transition-all ease-in-out duration-500">
+            class="bg-[url('../images/sliderShopAll_1.jpg')] bg-no-repeat bg-cover h-[409px] lg:h-[350px] w-full flex flex-col justify-center items-center rounded-[10px]">
+            <div class="text-center text-white text-[80px] lg:text-[75px] md:text-[65px] sm:text-[50px] es:text-[40px]">
+                <h2 class="font-TuesdayNight">Shop</h2>
+                <p class="font-Melodrama">Our products</p>
             </div>
         </div>
-        <!-- ==== end of slider==== -->
 
-        <!-- ABout -->
-        <div class="relative w-full">
-            <div class="py-60 ml:py-20 md:py-[60px] text-center max-w-[700px] mx-auto">
-                <h2 class="npd-title-Melo">
-                    Natural and <br> certified organic
-                </h2>
-                <h2 class="npd-title-Tue">Skincare</h2>
-                <p class="leading-[19.6px] text-[14px] mt-[15px] mb-[50px] md:mb-5 text-black">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                    deleniti atque corrupti quos dolores et quas molestias excepturi.
-                </p>
-                <a href="" class="npd-btn mx-auto">Shop all</a>
-            </div>
-
-            <div class="npd-about-img absolute top-[20%] left-[5%]">
-                <img src="../images/about_1.jpg" alt="" class="">
-            </div>
-            <div class="npd-about-img absolute top-[9%] right-[16%] ">
-                <img src="../images/about_2.jpg" alt="" class="">
-            </div>
-            <div class="npd-about-img absolute bottom-[14%] left-[10%]">
-                <img src="../images/about_3.jpg" alt="" class="">
-            </div>
-            <div class="npd-about-img absolute bottom-[9%] right-[12%]">
-                <img src="../images/about_4.jpg" alt="" class="">
-            </div>
-            <div class="npd-about-img absolute top-[40%] right-[5%]">
-                <img src="../images/about_5.jpg" alt="" class="">
-            </div>
-
-        </div>
-
-
-        <!-- ===== video ===== -->
-        <div class="rounded-[10px] overflow-hidden h-[500px] ml:h-[200px] sm:h-[150px]">
-            <video autoplay muted loop class="w-full h-full object-cover">
-                <source src="../video/clip1.mp4" type="video/mp4">
-            </video>
-        </div>
-        <!-- end of video -->
 
         <!-- products -->
-        <div class="py-[120px] md:py-[70px] sm:py-[60px]">
-            <div class="text-center">
-                <h2 class="npd-title-Tue">Products</h2>
-                <h2 class="npd-title-Melo">Healthy skin, wildly you</h2>
-            </div>
-            <div class="grid gap-[15px] grid-cols-4 ml:grid-cols-2 es:grid-cols-1">
-                <div class="flex flex-col bg-color-sub-bg p-[10px] rounded-[10px] overflow-hidden">
-                    <a href="" class="block overflow-hidden rounded-[inherit] pt-[100%] relative">
-                        <div class="absolute left-0 top-0 bottom-0 right-0 group h-full w-full">
-                            <div
-                                class="absolute left-0 right-0 top-0 bottom-0 z-[1] transition-all duration-500 group-hover:opacity-0 group-hover:invisible">
-                                <img src="../images/product_1.jpg" alt="" class="w-full h-full object-cover">
-                            </div>
-                            <div class="absolute left-0 right-0 top-0 bottom-0 z-[0]">
-                                <img src="../images/product_1-1.jpg" alt="" class="w-full h-full object-cover">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="flex-grow flex flex-col justify-between">
-                        <div class="pt-5 px-[15px] pb-[15px]">
-                            <div class="flex justify-between items-center mb-[6px]">
-                                <span class="uppercase text-[14px]">
-                                    CLEANSER
-                                </span>
-                                <p class="text-[15px] font-semibold">
-                                    $ 56.00 USD
-                                </p>
-                            </div>
-                            <a href=""
-                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">anti
-                                acne face wash</a>
-                        </div>
-                        <a href="" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
-                    </div>
+        <div class="py-[50px]">
+            <div class="flex justify-center items-center flex-wrap text-center mb-[35px]">
+                <div class="mr-5 sm:mr-0 sm:mb-2">Shop by category:</div>
+                <div class="flex justify-center flex-wrap items-center gap-5 sm:gap-3">
+                    <a href="./serum.html" class="text-sub-text">Serums</a>
+                    <a href="./nightcream.html" class="text-sub-text">Night Cream</a>
+                    <a href="./bodywash.html" class="text-sub-text">Body Wash</a>
+                    <a href="./facewash.html" class="text-sub-text">Face Wash</a>
+                    <a href="./cleanser.html" class="text-sub-text">Cleanser</a>
                 </div>
+            </div>
+            <div class="grid gap-[30px] grid-cols-4 ml:grid-cols-2 es:grid-cols-1">
                 <div class="flex flex-col bg-color-sub-bg p-[10px] rounded-[10px] overflow-hidden">
                     <a href="" class="block overflow-hidden rounded-[inherit] pt-[100%] relative">
                         <div class="absolute left-0 top-0 bottom-0 right-0 group h-full w-full">
@@ -256,16 +174,12 @@
                     <div class="flex-grow flex flex-col justify-between">
                         <div class="pt-5 px-[15px] pb-[15px]">
                             <div class="flex justify-between items-center mb-[6px]">
-                                <span class="uppercase text-[14px]">
-                                    serums
-                                </span>
                                 <p class="text-[15px] font-semibold">
                                     $ 34.00 USD
                                 </p>
                             </div>
                             <a href=""
-                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Vitamin
-                                C Hand & Nail Cream</a>
+                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Vitamin C Hand & Nail Cream</a>
                         </div>
                         <a href="" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
                     </div>
@@ -275,26 +189,22 @@
                         <div class="absolute left-0 top-0 bottom-0 right-0 group h-full w-full">
                             <div
                                 class="absolute left-0 right-0 top-0 bottom-0 z-[1] transition-all duration-500 group-hover:opacity-0 group-hover:invisible">
-                                <img src="../images/product_3.jpg" alt="" class="w-full h-full object-cover">
+                                <img src="../images/product_5.jpg" alt="" class="w-full h-full object-cover">
                             </div>
                             <div class="absolute left-0 right-0 top-0 bottom-0 z-[0]">
-                                <img src="../images/product_3-3.jpg" alt="" class="w-full h-full object-cover">
+                                <img src="../images/product_5_1.jpg" alt="" class="w-full h-full object-cover">
                             </div>
                         </div>
                     </a>
                     <div class="flex-grow flex flex-col justify-between">
                         <div class="pt-5 px-[15px] pb-[15px]">
                             <div class="flex justify-between items-center mb-[6px]">
-                                <span class="uppercase text-[14px]">
-                                    body wash
-                                </span>
                                 <p class="text-[15px] font-semibold">
-                                    $ 67.00 USD
+                                    $ 66.00 USD
                                 </p>
                             </div>
                             <a href=""
-                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Vitamin
-                                C Clay Face Mask</a>
+                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Anti Acne Face Serum</a>
                         </div>
                         <a href="" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
                     </div>
@@ -304,175 +214,53 @@
                         <div class="absolute left-0 top-0 bottom-0 right-0 group h-full w-full">
                             <div
                                 class="absolute left-0 right-0 top-0 bottom-0 z-[1] transition-all duration-500 group-hover:opacity-0 group-hover:invisible">
-                                <img src="../images/product_4.jpg" alt="" class="w-full h-full object-cover">
+                                <img src="../images/product_8.jpg" alt="" class="w-full h-full object-cover">
                             </div>
                             <div class="absolute left-0 right-0 top-0 bottom-0 z-[0]">
-                                <img src="../images/product_4-4.jpg" alt="" class="w-full h-full object-cover">
+                                <img src="../images/product_8_1.jpg" alt="" class="w-full h-full object-cover">
                             </div>
                         </div>
                     </a>
                     <div class="flex-grow flex flex-col justify-between">
                         <div class="pt-5 px-[15px] pb-[15px]">
                             <div class="flex justify-between items-center mb-[6px]">
-                                <span class="uppercase text-[14px]">
-                                    night dream
-                                </span>
                                 <p class="text-[15px] font-semibold">
-                                    $ 89.00 USD
+                                    $ 23.00 USD
                                 </p>
                             </div>
                             <a href=""
-                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">10
-                                In 1 Active Miracle</a>
+                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Vitamin C Face Cream For Skin</a>
                         </div>
                         <a href="" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
                     </div>
                 </div>
-
-            </div>
-        </div>
-        <!-- end of products -->
-
-        <!-- fearture -->
-        <div class="grid grid-cols-2 md:grid-cols-1 gap-[100px] ml:gap-10">
-            <div class="rounded-[10px] overflow-hidden">
-                <img src="../images/feature_1.jpg" alt="" class="w-full h-full object-cover">
-            </div>
-            <div class="text-center">
-                <h2 class="npd-title-Tue">Feature</h2>
-                <h2 class="npd-title-Melo">Innovation-led Products</h2>
-                <p class="leading-[19.6px] text-[14px] mt-[15px] mb-[50px] md:mb-5 text-black">Temporibus autem
-                    quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
-                    repudiandae sint.</p>
-                <a href="" class="npd-btn mx-auto">Read more</a>
-            </div>
-        </div>
-        <!-- end of feature -->
-
-        <!-- brand -->
-        <div class="py-[200px] ml:py-20 md:py-[60px] text-center w-[65%] md:w-full mx-auto">
-            <div class="mb-20">
-                <p data-brand="1" class="npd-brand-item active">"There are
-                    many variations of passages of Lorem Ipsum
-                    available, but the majority have in some
-                    form, by injected humour, or randomised words which"</p>
-                <p data-brand="2" class="npd-brand-item">"Generate
-                    Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from
-                    repetition, injected humour, or non-characteristic"</p>
-                <p data-brand="3" class="npd-brand-item">"Nam libero
-                    tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat
-                    facere possimus, omnis voluptas assumenda"</p>
-                <p data-brand="4" class="npd-brand-item">"Shrinking
-                    from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when
-                    our power of choice is untrammelled and when nothing"</p>
-            </div>
-            <div class="flex justify-center items-center flex-wrap sm:gap-[5px]">
-                <div class="h-[40px] py-[9px] px-[30px] sm:px-[10px]">
-                    <img data-brand="1" src="../images/brand1.svg" alt="" class="npd-brand-img active">
-                </div>
-                <div class="h-[40px] py-[9px] px-[30px] sm:px-[10px]">
-                    <img data-brand="2" src="../images/brand2.svg" alt="" class="npd-brand-img">
-                </div>
-                <div class="h-[40px] py-[9px] px-[30px] sm:px-[10px]">
-                    <img data-brand="3" src="../images/brand3.svg" alt="" class="npd-brand-img">
-                </div>
-                <div class="h-[40px] py-[9px] px-[30px] sm:px-[10px]">
-                    <img data-brand="4" src="../images/brand4.svg" alt="" class="npd-brand-img">
-                </div>
-            </div>
-        </div>
-        <!-- end of brand -->
-
-        <!-- slideImage -->
-        <div class="">
-            <div class="swiper ml2:!mx-[-50px] ml:hidden">
-                <div class="swiper-wrapper !ml:flex-wrap ml:gap-[15px]">
-                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
-                        <img src="../images/swiper1.jpg" data-magnify-src="../images/swiper1.jpg" alt=""
-                            class="npd-zoom-img w-full h-full object-cover zoom">
-                    </div>
-                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
-                        <img src="../images/swiper2.jpg" data-magnify-src="../images/swiper2.jpg" alt=""
-                            class="npd-zoom-img w-full h-full object-cover zoom">
-                    </div>
-                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
-                        <img src="../images/swiper3.jpg" data-magnify-src="../images/swiper3.jpg" alt=""
-                            class="npd-zoom-img w-full h-full object-cover zoom">
-                    </div>
-                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
-                        <img src="../images/swiper4.jpg" data-magnify-src="../images/swiper4.jpg" alt=""
-                            class="npd-zoom-img w-full h-full object-cover zoom">
-                    </div>
-                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
-                        <img src="../images/swiper5.jpg" data-magnify-src="../images/swiper5.jpg" alt=""
-                            class="npd-zoom-img w-full h-full object-cover zoom">
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap ml2:hidden">
-                <div class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px]">
-                    <img src="../images/swiper1.jpg" data-magnify-src="../images/swiper1.jpg" alt=""
-                        class="w-ful h-full zoom">
-                </div>
-                <div class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px]">
-                    <img src="../images/swiper2.jpg" data-magnify-src="../images/swiper2.jpg" alt=""
-                        class="w-ful h-full zoom">
-                </div>
-                <div class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px]">
-                    <img src="../images/swiper3.jpg" data-magnify-src="../images/swiper3.jpg" alt=""
-                        class="w-ful h-full zoom">
-                </div>
-                <div class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px]">
-                    <img src="../images/swiper4.jpg" data-magnify-src="../images/swiper4.jpg" alt=""
-                        class="w-ful h-full zoom">
-                </div>
-                <div
-                    class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px] ml:ml-[25%] es:ml-0">
-                    <img src="../images/swiper5.jpg" data-magnify-src="../images/swiper5.jpg" alt=""
-                        class="w-ful h-full zoom">
-                </div>
-            </div>
-        </div>
-        <!-- end of slideimg -->
-
-        <!-- Skinblog -->
-        <div class="mb-[120px]">
-            <h2 class="npd-title-Melo text-center mb-[10px] mt-8">
-                Skinn blog
-            </h2>
-
-            <div class="grid grid-cols-2 ml:grid-cols-1 gap-[50px]">
-                <div class="grid grid-cols-2 gap-[30px] sm:grid-cols-1">
-                    <a href="" class="">
-                        <img src="../images/blog1.jpg" alt="" class="rounded-[10px]">
+                <div class="flex flex-col bg-color-sub-bg p-[10px] rounded-[10px] overflow-hidden">
+                    <a href="" class="block overflow-hidden rounded-[inherit] pt-[100%] relative">
+                        <div class="absolute left-0 top-0 bottom-0 right-0 group h-full w-full">
+                            <div
+                                class="absolute left-0 right-0 top-0 bottom-0 z-[1] transition-all duration-500 group-hover:opacity-0 group-hover:invisible">
+                                <img src="../images/product_12.jpg" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div class="absolute left-0 right-0 top-0 bottom-0 z-[0]">
+                                <img src="../images/product_12_1.jpg" alt="" class="w-full h-full object-cover">
+                            </div>
+                        </div>
                     </a>
-                    <div class="flex flex-col justify-between">
-                        <a href=""
-                            class="font-Melodrama text-black hover:text-sub-text no-underline hover:underline text-[28px] sm:text-[30px] leading-[36.4px] transition-all duration-200 sm:text-center">
-                            Which skinceuticals vitamin c serum is right for you?
-                        </a>
-                        <a href="" class="npd-btn sm:mt-[10px] sm:mx-auto">Read more</a>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <div class="pt-5 px-[15px] pb-[15px]">
+                            <div class="flex justify-between items-center mb-[6px]">
+                                <p class="text-[15px] font-semibold">
+                                    $ 10.00 USD
+                                </p>
+                            </div>
+                            <a href=""
+                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Brightening Face Wash</a>
+                        </div>
+                        <a href="" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
                     </div>
-
-                </div>
-                <div class="grid grid-cols-2 gap-[30px] sm:grid-cols-1">
-                    <a href="" class="">
-                        <img src="../images/blog2.jpg" alt="" class="rounded-[10px]">
-                    </a>
-                    <div class="flex flex-col justify-between">
-                        <a href=""
-                            class="font-Melodrama text-black hover:text-sub-text no-underline hover:underline text-[28px] sm:text-[30px] leading-[36.4px] transition-all duration-200 sm:text-center">
-                            Everything you need to know about your skin
-                        </a>
-                        <a href="" class="npd-btn sm:mt-[10px] sm:mx-auto">Read more</a>
-                    </div>
-
                 </div>
             </div>
         </div>
-        <!-- end of skinblog -->
-
 
         <footer
             class="bg-color-sub-bg grid grid-cols-4 lg:grid-cols-2 sm:!grid-cols-1 gap-[100px] lg:gap-[80px] sm:gap-[50px] rounded-[10px] p-[50px] sm:p[30px]">
@@ -497,10 +285,11 @@
                         <a href="" class="npd-footer-text w-fit block transition-all duration-200 hover:underline">
                             Home
                         </a>
-                        <a href="./shopAll.html" class="npd-footer-text w-fit block transition-all duration-200 hover:underline">
+                        <a href="" class="npd-footer-text w-fit block transition-all duration-200 hover:underline">
                             Home 2
                         </a>
-                        <a href="" class="npd-footer-text w-fit block transition-all duration-200 hover:underline">
+                        <a href="./shopAll.html"
+                            class="npd-footer-text w-fit block transition-all duration-200 hover:underline">
                             Shop All
                         </a>
                         <a href="" class="npd-footer-text w-fit block transition-all duration-200 hover:underline">
@@ -575,58 +364,7 @@
             </div>
         </footer>
     </div>
-
-    <script src="../js/jquery.magnify.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../js/main.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.zoom').magnify({
-                speed: 100,
-                magnifiedWidth: 650,
-                magnifiedHeight: 650,
-                timeout: 2,
-            });
-        });
-    </script>
-    <script>
-        (function () {
-            "use-strict";
-            let swiper;
-            function enableSwiper() {
-                swiper = new Swiper(".swiper", {
-                    slidesPerView: 3,
-                    spaceBetween: 10,
-                    mousewheel: true,
-                    invert: true,
-                    loop: true,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                    breakpoints: {
-                        992: {
-                            spaceBetween: 0,
-                        }
-                    }
-                });
-            }
-
-            function WidthChange(breakpoint) {
-                if (breakpoint.matches) {
-                    return enableSwiper();
-                } else {
-                    if (swiper !== undefined) swiper.destroy(true, true);
-                }
-            }
-
-            if (matchMedia) {
-                const breakpoint = window.matchMedia("(min-width: 992px)");
-                breakpoint.addListener(WidthChange);
-                WidthChange(breakpoint);
-            }
-        })()
-    </script>
 </body>
 
 </html>
