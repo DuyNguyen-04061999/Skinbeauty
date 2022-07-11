@@ -9,7 +9,9 @@ window.addEventListener("load", function () {
 
   function start() {
     handleSetHeightProduct();
-    handleLoadSliderImg();
+    if (sliderWrapper) {
+      handleLoadSliderImg();
+    }
   }
   function handleMenuBar(e) {
     navList.style.overflow = "hidden";
@@ -32,7 +34,9 @@ window.addEventListener("load", function () {
         parseInt(navList.style.height) + parseInt(subNav.scrollHeight)
       }px`;
     } else {
-      navList.style.height = `${parseInt(navList.style.height) - parseInt(subNav.scrollHeight)}px`;
+      navList.style.height = `${
+        parseInt(navList.style.height) - parseInt(subNav.scrollHeight)
+      }px`;
       subNav.style.height = `${0}px`;
     }
   }
@@ -114,39 +118,42 @@ window.addEventListener("load", function () {
   // ================ End of Header & Cart UI ======================
 
   // =================== Slider & About ======================
+
   const sliderWrapper = $("#npd-slider-img-wrapper");
-  const sliderImg = $("#npd-slider-img");
-  const aboutImgs = $$(".npd-about-img");
-  function handleChangeSliderSize(e) {
-    const scroll = window.pageYOffset;
-    sliderImg.style.width = `${parseInt(100 + scroll / 50)}%`;
-    sliderImg.style.height = `${parseInt(100 + scroll / 50)}%`;
-  }
-  let oldValue = 0;
-  let newValue = 0;
-
-  window.addEventListener("scroll", function (e) {
-    handleChangeSliderSize();
-
-    newValue = this.pageYOffset;
-    if (newValue > oldValue) {
-      // up
-      [...aboutImgs].forEach((aboutImg) => {
-        aboutImg.style.transform = `translateY(${-newValue / 100}%)`;
-      });
-    } else {
-      //  down
-      [...aboutImgs].forEach((aboutImg) => {
-        aboutImg.style.transform = `translateY(${newValue / 100}%)`;
-      });
+  if (sliderWrapper) {
+    const sliderImg = $("#npd-slider-img");
+    const aboutImgs = $$(".npd-about-img");
+    function handleChangeSliderSize(e) {
+      const scroll = window.pageYOffset;
+      sliderImg.style.width = `${parseInt(100 + scroll / 50)}%`;
+      sliderImg.style.height = `${parseInt(100 + scroll / 50)}%`;
     }
-    oldValue = newValue;
-  });
+    let oldValue = 0;
+    let newValue = 0;
 
-  function handleLoadSliderImg() {
-    setTimeout(() => {
-      sliderWrapper.style = `transform: scale(1); visibility: visible; opacity: 1`;
-    }, 1000);
+    window.addEventListener("scroll", function (e) {
+      handleChangeSliderSize();
+
+      newValue = this.pageYOffset;
+      if (newValue > oldValue) {
+        // up
+        [...aboutImgs].forEach((aboutImg) => {
+          aboutImg.style.transform = `translateY(${-newValue / 100}%)`;
+        });
+      } else {
+        //  down
+        [...aboutImgs].forEach((aboutImg) => {
+          aboutImg.style.transform = `translateY(${newValue / 100}%)`;
+        });
+      }
+      oldValue = newValue;
+    });
+
+    function handleLoadSliderImg() {
+      setTimeout(() => {
+        sliderWrapper.style = `transform: scale(1); visibility: visible; opacity: 1`;
+      }, 1000);
+    }
   }
 
   // ================= brand =========================
@@ -158,7 +165,7 @@ window.addEventListener("load", function () {
       [...brandImgs].forEach((img) => img.classList.remove("active"));
       e.target.classList.add("active");
       const contentNum = e.target.dataset.brand;
-      
+
       [...brandContent].forEach((item) => {
         item.classList.remove("active");
         if (item.dataset.brand === contentNum) {
