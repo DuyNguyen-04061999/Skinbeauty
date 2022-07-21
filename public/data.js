@@ -7,7 +7,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-1a",
     price: 56,
     size: 100,
-    link: "../images/product_1.jpg",
+    link: "./images/product_1.jpg",
   },
   {
     incart: 0,
@@ -15,7 +15,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-1b",
     price: 82,
     size: 500,
-    link: "../images/product_1.jpg",
+    link: "./images/product_1.jpg",
   },
   {
     incart: 0,
@@ -23,7 +23,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-2a",
     price: 34,
     size: 100,
-    link: "../images/product_2.jpg",
+    link: "./images/product_2.jpg",
   },
   {
     incart: 0,
@@ -31,7 +31,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-2b",
     price: 65,
     size: 500,
-    link: "../images/product_2.jpg",
+    link: "./images/product_2.jpg",
   },
   {
     incart: 0,
@@ -39,7 +39,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-3a",
     price: 67,
     size: 100,
-    link: "../images/product_3.jpg",
+    link: "./images/product_3.jpg",
   },
   {
     incart: 0,
@@ -47,7 +47,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-3b",
     price: 99,
     size: 500,
-    link: "../images/product_3.jpg",
+    link: "./images/product_3.jpg",
   },
   {
     incart: 0,
@@ -55,7 +55,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-4a",
     price: 89,
     size: 100,
-    link: "../images/product_4.jpg",
+    link: "./images/product_4.jpg",
   },
   {
     incart: 0,
@@ -63,7 +63,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-4b",
     price: 110,
     size: 500,
-    link: "../images/product_4.jpg",
+    link: "./images/product_4.jpg",
   },
   {
     incart: 0,
@@ -71,7 +71,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-5a",
     price: 66,
     size: 100,
-    link: "../images/product_5.jpg",
+    link: "./images/product_5.jpg",
   },
   {
     incart: 0,
@@ -79,7 +79,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-5b",
     price: 99,
     size: 500,
-    link: "../images/product_5.jpg",
+    link: "./images/product_5.jpg",
   },
   {
     incart: 0,
@@ -87,7 +87,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-6a",
     price: 89,
     size: 100,
-    link: "../images/product_6.jpg",
+    link: "./images/product_6.jpg",
   },
   {
     incart: 0,
@@ -95,7 +95,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-6b",
     price: 145,
     size: 500,
-    link: "../images/product_6.jpg",
+    link: "./images/product_6.jpg",
   },
   {
     incart: 0,
@@ -103,7 +103,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-7",
     price: 14,
     size: 100,
-    link: "../images/product_7.jpg",
+    link: "./images/product_7.jpg",
   },
   {
     incart: 0,
@@ -111,7 +111,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-8",
     price: 23,
     size: 100,
-    link: "../images/product_8.jpg",
+    link: "./images/product_8.jpg",
   },
   {
     incart: 0,
@@ -119,7 +119,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-9a",
     price: 20,
     size: 100,
-    link: "../images/product_9.jpg",
+    link: "./images/product_9.jpg",
   },
   {
     incart: 0,
@@ -127,7 +127,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-9b",
     price: 20,
     size: 500,
-    link: "../images/product_9.jpg",
+    link: "./images/product_9.jpg",
   },
   {
     incart: 0,
@@ -135,7 +135,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-10a",
     price: 12,
     size: 100,
-    link: "../images/product_10.jpg",
+    link: "./images/product_10.jpg",
   },
   {
     incart: 0,
@@ -143,7 +143,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-10b",
     price: 35,
     size: 500,
-    link: "../images/product_10.jpg",
+    link: "./images/product_10.jpg",
   },
   {
     incart: 0,
@@ -151,7 +151,7 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-11",
     price: 75,
     size: 100,
-    link: "../images/product_11.jpg",
+    link: "./images/product_11.jpg",
   },
   {
     incart: 0,
@@ -159,6 +159,6 @@ const data = JSON.parse(localStorage.getItem("data")) || [
     tag: "product-12",
     price: 10,
     size: 100,
-    link: "../images/product_12.jpg",
+    link: "./images/product_12.jpg",
   },
 ];
