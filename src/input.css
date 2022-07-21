@@ -89,9 +89,6 @@ html {
 
 /* Cart html */
 
-.npd-cart-empty {
-  @apply grid place-items-center text-[14px] text-black;
-}
 /* =============================== End of Header ==================================== */
 
 /* =============================== Slider ============================================ */
@@ -102,7 +99,7 @@ html {
 /* =============== About ====================== */
 
 .npd-about-img {
-  @apply hidden lg2:block transition-all duration-1000 translate-y-0 ease absolute -z-10 rounded-lg overflow-hidden;
+  @apply hidden lg2:block transition-all duration-1000 translate-y-0 absolute ease-out -z-10 rounded-lg overflow-hidden;
 }
 
 /* ================ Products ================= */
@@ -144,3 +141,38 @@ html {
   @apply font-Melodrama text-[28px] font-medium leading-[39.2px] mb-[30px];
 }
 /* ========================================== end of Home ==================================================== */
+
+/* ============================== Product page ================ */
+
+.npd-product-info * {
+  pointer-events: none;
+}
+
+/* ============= thumb gallery ====================== */
+
+#npd-cart-thumb * {
+  pointer-events: none;
+}
+
+.swiper-slide {
+  cursor: pointer;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
