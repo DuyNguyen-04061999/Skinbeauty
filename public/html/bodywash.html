@@ -45,7 +45,7 @@
                     <ul id="npd-subnav-pages"
                         class="absolute left-0 md:top-full top-[calc(100%_+_10px)] translate-y-[25px] desk:invisible desk:opacity-0 bg-[#e7ded8] min-w-[200px] md:right-0 md:rounded-none rounded-[10px] desk:group-hover:opacity-100 desk:group-hover:visible desk:group-hover:translate-y-0 transition-all duration-300 before:absolute before:w-full before:h-6 before:bottom-[calc(100%-4px)] before:bg-transparent md:px-5 md:h-0 overflow-hidden md:translate-y-0 md:shadow-[0px_-3px_9px_-5px_rgb(0,0,0,0.3)]">
                         <li class="">
-                            <a href="" class="npd-header-subnav-item">Home</a>
+                            <a href="./index.html" class="npd-header-subnav-item">Home</a>
                         </li>
                         <li class="">
                             <a href="" class="npd-header-subnav-item">Home 2</a>
@@ -82,7 +82,7 @@
             <div id="npd-cart-basket"
                 class="flex flex-col fixed right-0 top-0 bottom-0 w-1/3 xl:w-[38%] md:w-1/2 sm:w-full bg-color-bg z-[9999999] translate-x-1/4 opacity-0 invisible transition-all duration-300">
                 <div id="npd-cart-header"
-                    class="flex justify-between items-center px-6 py-4 lg:py-7 border-b-[#E7DED8] border-b-[0.5px] ">
+                    class="flex justify-between items-center px-6 py-4 lg:py-7 border-b-[#E7DED8] border-b-[0.5px]">
                     <div class="">
                         <div class="font-['MelodramaMedium'] text-2xl lg:text-3xl font-semibold">Your Cart</div>
                     </div>
@@ -92,41 +92,48 @@
                     </div>
                 </div>
 
-                <div id="npd-cart-body" class="flex-grow npd-cart-empty">
-                    No items found.
-                    <!-- <form class="flex flex-col justify-between gap-4 h-full">
-                        <div id="npd-cart-product"
-                            class="overflow-y-auto scrollbar-hide touch-pan-y snap-y snap-always snap-mandatory">
-                            <div class=" py-3 px-6 flex justify-between snap-start">
-                                <div class="flex justify-center shrink-0 gap-4">
-                                    <div
-                                        class="w-[60px] h-[60px] rounded-[10px] overflow-hidden border-color-sub-bg border-[1px]">
-                                        <img src="./product_1.jpg" class="w-full h-full object-cover" alt="">
+                <div id="npd-cart-body" class="flex-grow">
+                    <form id="npd-form-account" class="h-full">
+                        <div id="npd-cart-empty"
+                            class="text-[14px] flex justify-center items-center text-black h-full animate-appear">
+                            No items found.
+                        </div>
+
+                        <div id="npd-cart-wrap" class="h-full hidden flex-col gap-4 justify-between animate-appear">
+                            <div id="npd-cart-product"
+                                class="overflow-y-auto scrollbar-hide touch-pan-y snap-y snap-always snap-mandatory">
+                                <!-- <div class="npd-cart-item py-3 px-6 flex justify-between snap-start animate-appear">
+                                    <div class="flex justify-center shrink-0 gap-4">
+                                        <div
+                                            class="w-[60px] h-[60px] rounded-[10px] overflow-hidden border-color-sub-bg border-[1px]">
+                                            <img src="${value.link}" class="w-full h-full object-cover" alt="">
+                                        </div>
+                                        <div class="text-[14px]">
+                                            <h2 class="font-bold">${value.name}</h2>
+                                            <p class="">$ ${value.price}.00 USD</p>
+                                            <p class="">Size: ${value.size}ml</p>
+                                            <span data-tag="${value.tag}"
+                                                class="npd-remove-account text-sub-text mt-2 transition-all border-[1.25px] border-transparent duration-200 hover:border-b-sub-text cursor-pointer">Remove</span>
+                                        </div>
                                     </div>
-                                    <div class="text-[14px]">
-                                        <h2 class="font-bold">Vitamin C Clay Face Mask</h2>
-                                        <p class="">$ 67.00 USD</p>
-                                        <p class="">Size: 100ml</p>
-                                        <span
-                                            class="text-sub-text mt-2 transition-all border-[1.25px] border-transparent duration-200 hover:border-b-sub-text cursor-pointer">Remove</span>
-                                    </div>
+                                    <input type="number" name="subnumber" data-tag="${value.tag}"
+                                        value="${value.incart}" min="1"
+                                        class="py-2 pr-[6px] pl-3 w-[60px] h-[38px] bg-color-sub-bg rounded-[10px] text-[14px]">
+                                </div> -->
+                            </div>
+                            <div id="npd-cart-checkout"
+                                class="pt-3 px-6 pb-6 border-t-color-sub-bg border-solid border-t-[1px] flex-shrink-0 h-fit basis-0">
+                                <!-- <div class="flex justify-between items-center mb-4">
+                                    <span class="text-[14px] text-black">Subtotal</span>
+                                    <p class="text-[14px] text-black font-bold">$ 67.00 USD</p>
                                 </div>
-                                <input type="text" value="1" min="0"
-                                    class="py-2 pr-[6px] pl-3 w-[60px] h-[38px] bg-color-sub-bg rounded-[10px] text-[14px]">
+                                <button type="submit"
+                                    class="w-full px-[15px] py-[9px] text-white text-[14px] rounded-[5px] bg-sub-text hover:bg-black transition-all duration-500">
+                                    Continue to Checkout
+                                </button> -->
                             </div>
                         </div>
-                        <div id="npd-cart-checkout"
-                            class="pt-3 px-6 pb-6 border-t-color-sub-bg border-solid border-t-[1px] h-fit">
-                            <div class="flex justify-between items-center mb-4">
-                                <span class="text-[14px] text-black">Subtotal</span>
-                                <p class="text-[14px] text-black font-bold">$ 67.00 USD</p>
-                            </div>
-                            <button type="submit"
-                                class="w-full px-[15px] py-[9px] text-white text-[14px] rounded-[5px] bg-sub-text hover:bg-black transition-all duration-500">
-                                Continue to Checkout
-                            </button>
-                        </div>
-                    </form> -->
+                    </form>
                 </div>
 
             </div>
@@ -138,10 +145,10 @@
 
 
         <div
-            class="bg-[url('../images/sliderShopAll_1.jpg')] bg-no-repeat bg-cover h-[409px] lg:h-[350px] w-full flex flex-col justify-center items-center rounded-[10px]">
-            <div class="text-center text-white text-[80px] lg:text-[75px] md:text-[65px] sm:text-[50px] es:text-[40px]">
+            class="bg-[url('../images/bodywash.jpg')] bg-no-repeat bg-cover bg-center h-[300px] lg:h-[200px] w-full flex flex-col justify-center items-center rounded-[10px]">
+            <div class="text-center text-white text-[80px] lg:text-[60px] sm:text-[50px] es:text-[40px]">
                 <h2 class="font-TuesdayNight">Shop</h2>
-                <p class="font-Melodrama">Our products</p>
+                <p class="font-Melodrama">Body Wash</p>
             </div>
         </div>
 
@@ -160,14 +167,14 @@
             </div>
             <div class="grid gap-[30px] grid-cols-4 ml:grid-cols-2 es:grid-cols-1">
                 <div class="flex flex-col bg-color-sub-bg p-[10px] rounded-[10px] overflow-hidden">
-                    <a href="" class="block overflow-hidden rounded-[inherit] pt-[100%] relative">
+                    <a href="./product-3.html" class="block overflow-hidden rounded-[inherit] pt-[100%] relative">
                         <div class="absolute left-0 top-0 bottom-0 right-0 group h-full w-full">
                             <div
                                 class="absolute left-0 right-0 top-0 bottom-0 z-[1] transition-all duration-500 group-hover:opacity-0 group-hover:invisible">
                                 <img src="../images/product_3.jpg" alt="" class="w-full h-full object-cover">
                             </div>
                             <div class="absolute left-0 right-0 top-0 bottom-0 z-[0]">
-                                <img src="../images/product_3-3.jpg" alt="" class="w-full h-full object-cover">
+                                <img src="../images/product_3-1.jpg" alt="" class="w-full h-full object-cover">
                             </div>
                         </div>
                     </a>
@@ -178,21 +185,21 @@
                                     $ 67.00 USD
                                 </p>
                             </div>
-                            <a href=""
+                            <a href="./product-3.html"
                                 class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Vitamin C Clay Face Mask</a>
                         </div>
-                        <a href="" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
+                        <a href="./product-3.html" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
                     </div>
                 </div>
                 <div class="flex flex-col bg-color-sub-bg p-[10px] rounded-[10px] overflow-hidden">
-                    <a href="" class="block overflow-hidden rounded-[inherit] pt-[100%] relative">
+                    <a href="./product-6.html" class="block overflow-hidden rounded-[inherit] pt-[100%] relative">
                         <div class="absolute left-0 top-0 bottom-0 right-0 group h-full w-full">
                             <div
                                 class="absolute left-0 right-0 top-0 bottom-0 z-[1] transition-all duration-500 group-hover:opacity-0 group-hover:invisible">
                                 <img src="../images/product_6.jpg" alt="" class="w-full h-full object-cover">
                             </div>
                             <div class="absolute left-0 right-0 top-0 bottom-0 z-[0]">
-                                <img src="../images/product_6_1.jpg" alt="" class="w-full h-full object-cover">
+                                <img src="../images/product_6-1.jpg" alt="" class="w-full h-full object-cover">
                             </div>
                         </div>
                     </a>
@@ -203,21 +210,21 @@
                                     $ 14.00 USD
                                 </p>
                             </div>
-                            <a href=""
+                            <a href="./product-6.html"
                                 class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Sunscreen Matte Finish</a>
                         </div>
-                        <a href="" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
+                        <a href="./product-6.html" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
                     </div>
                 </div>
                 <div class="flex flex-col bg-color-sub-bg p-[10px] rounded-[10px] overflow-hidden">
-                    <a href="" class="block overflow-hidden rounded-[inherit] pt-[100%] relative">
+                    <a href="./product-8.html" class="block overflow-hidden rounded-[inherit] pt-[100%] relative">
                         <div class="absolute left-0 top-0 bottom-0 right-0 group h-full w-full">
                             <div
                                 class="absolute left-0 right-0 top-0 bottom-0 z-[1] transition-all duration-500 group-hover:opacity-0 group-hover:invisible">
                                 <img src="../images/product_8.jpg" alt="" class="w-full h-full object-cover">
                             </div>
                             <div class="absolute left-0 right-0 top-0 bottom-0 z-[0]">
-                                <img src="../images/product_8_1.jpg" alt="" class="w-full h-full object-cover">
+                                <img src="../images/product_8-1.jpg" alt="" class="w-full h-full object-cover">
                             </div>
                         </div>
                     </a>
@@ -228,21 +235,21 @@
                                     $ 23.00 USD
                                 </p>
                             </div>
-                            <a href=""
+                            <a href="./product-8.html"
                                 class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Vitamin C Face Cream For Skin</a>
                         </div>
-                        <a href="" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
+                        <a href="./product-8.html" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
                     </div>
                 </div>
                 <div class="flex flex-col bg-color-sub-bg p-[10px] rounded-[10px] overflow-hidden">
-                    <a href="" class="block overflow-hidden rounded-[inherit] pt-[100%] relative">
+                    <a href="./product-11.html" class="block overflow-hidden rounded-[inherit] pt-[100%] relative">
                         <div class="absolute left-0 top-0 bottom-0 right-0 group h-full w-full">
                             <div
                                 class="absolute left-0 right-0 top-0 bottom-0 z-[1] transition-all duration-500 group-hover:opacity-0 group-hover:invisible">
                                 <img src="../images/product_11.jpg" alt="" class="w-full h-full object-cover">
                             </div>
                             <div class="absolute left-0 right-0 top-0 bottom-0 z-[0]">
-                                <img src="../images/product_11_1.jpg" alt="" class="w-full h-full object-cover">
+                                <img src="../images/product_11-1.jpg" alt="" class="w-full h-full object-cover">
                             </div>
                         </div>
                     </a>
@@ -253,10 +260,10 @@
                                     $ 75.00 USD
                                 </p>
                             </div>
-                            <a href=""
+                            <a href="./product-11.html"
                                 class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Vinegar Face Moisturizer</a>
                         </div>
-                        <a href="" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
+                        <a href="./product-11.html" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
                     </div>
                 </div>
             </div>
@@ -282,7 +289,7 @@
                 <h2 class="npd-footer-title">Pages</h2>
                 <div class="grid grid-cols-2 sm:grid-cols-1 gap-4">
                     <div class="">
-                        <a href="" class="npd-footer-text w-fit block transition-all duration-200 hover:underline">
+                        <a href="./index.html" class="npd-footer-text w-fit block transition-all duration-200 hover:underline">
                             Home
                         </a>
                         <a href="" class="npd-footer-text w-fit block transition-all duration-200 hover:underline">
@@ -364,7 +371,8 @@
             </div>
         </footer>
     </div>
-    <script src="../js/main.js"></script>
+    <script src="../js/main.js" type="module"></script>
+
 </body>
 
 </html>

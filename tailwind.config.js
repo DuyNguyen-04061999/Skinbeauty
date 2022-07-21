@@ -46,6 +46,7 @@ module.exports = {
       ml: { raw: "(max-width: 991px)" },
       desk: { raw: "(min-width: 769px)" },
       es: { raw: "(max-width: 479px)" },
+      exs: { raw: "(max-width: 376px)" },
     },
   },
   plugins: [

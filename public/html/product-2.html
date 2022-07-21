@@ -14,11 +14,7 @@
     <link rel="stylesheet" href="../output.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body class="bg-color-bg">
@@ -148,79 +144,223 @@
             </div>
         </header>
 
-
-        <!-- slider -->
+        <!-- ================= cart function ================= -->
         <div
-            class="relative h-[750px] md:h-[500px] sm:h-[400px] pt-[150px] pl-[50px] md:pl-0 md:pt-[100px] sm:pt-[50px]">
-            <div class="relative z-[1] left-0 w-fit h-fit">
-                <h1
-                    class="font-Melodrama text-[90px] md:text-[60px] sm:text-[42px] font-medium mb-[30px] leading-[126px] lg:leading-[100px] md:leading-[70px] sm:leading-[50px]">
-                    Discover The <br> Beauty Within
-                </h1>
-                <h1
-                    class="font-TuesdayNight text-[130px] md:text-[60px] sm:text-[40px] leading-[182px] md:leading-[70px] sm:leading-[56px] text-sub-text text-right mb-[30px] lg2:absolute h-fit w-fit top-[70%] -right-[20%]">
-                    You
-                </h1>
-                <a href="#" class="npd-btn">
-                    View collection
-                </a>
+            class="grid grid-cols-[6fr,4fr] xl:grid-rows-[2fr,1fr] xm:grid-rows-2 lg:grid-rows-none lg:grid-cols-1 gap-[60px] lg:mb-[50px]">
+            <div id="npd-cart-thumb" class="grid grid-cols-2 gap-0 cursor-pointer row-span-1">
+                <div class="">
+                    <img class="w-full h-full object-cover" src="../images/product_2.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="w-full h-full object-cover" src="../images/product_2-1.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="w-full h-full object-cover" src="../images/product_2-2.jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="w-full h-full object-cover" src="../images/product_2-3.jpg" alt="">
+                </div>
             </div>
+            <div class="row-span-2">
+                <p class="text-sub-text text-[14px] leading-[19.6px] mt-10">Serums</p>
+                <h2
+                    class="font-Melodrama text-[56px] sm:text-[40px] exs:text-[32px] font-medium leading-[78.4px] mb-[10px]">
+                    Vitamin C Hand & Nail Cream</h2>
+                <div class="flex justify-start items-center gap-[10px]">
+                    <span class="font-Melodrama text-[28px] font-semibold leading-39.2px">$ 34.00 USD</span>
+                    <span class="text-[15px] leading-[19.6px] line-through opacity-30">$ 46.00 USD</span>
+                </div>
 
-            <div id="npd-slider-img-wrapper"
-                class="absolute right-0 top-0 bottom-0 w-[70%] rounded-lg overflow-hidden z-[-1] scale-[1.5] transition-all ease-linear duration-1000 invisible opacity-0">
-                <img id="npd-slider-img" src="../images/slider1.jpg" alt=""
-                    class="h-full w-full object-cover transition-all ease-in-out duration-500">
-            </div>
-        </div>
-        <!-- ==== end of slider==== -->
-
-        <!-- ABout -->
-        <div class="relative w-full">
-            <div class="py-60 ml:py-20 md:py-[60px] text-center max-w-[700px] mx-auto">
-                <h2 class="npd-title-Melo">
-                    Natural and <br> certified organic
-                </h2>
-                <h2 class="npd-title-Tue">Skincare</h2>
-                <p class="leading-[19.6px] text-[14px] mt-[15px] mb-[50px] md:mb-5 text-black">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                    deleniti atque corrupti quos dolores et quas molestias excepturi.
+                <p class="text-[14px] leading-[19.6px] mt-10 mb-5">
+                    The wise man therefore always holds in these matters to this principle of selection: he rejects
+                    pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
                 </p>
-                <a href="" class="npd-btn mx-auto">Shop all</a>
-            </div>
 
-            <div class="npd-about-img absolute top-[20%] left-[5%]">
-                <img src="../images/about_1.jpg" alt="" class="">
-            </div>
-            <div class="npd-about-img absolute top-[9%] right-[16%] ">
-                <img src="../images/about_2.jpg" alt="" class="">
-            </div>
-            <div class="npd-about-img absolute bottom-[14%] left-[10%]">
-                <img src="../images/about_3.jpg" alt="" class="">
-            </div>
-            <div class="npd-about-img absolute bottom-[9%] right-[12%]">
-                <img src="../images/about_4.jpg" alt="" class="">
-            </div>
-            <div class="npd-about-img absolute top-[40%] right-[5%]">
-                <img src="../images/about_5.jpg" alt="" class="">
-            </div>
+                <div
+                    class="flex sm:flex-col items-center sm:items-start gap-4 sm:gap-[10px] justify-start mt-[30px] mb-[40px]">
+                    <div class="flex justify-start items-center gap-[10px]">
+                        <div
+                            class="flex justify-center items-center w-5 h-5 rounded-[50%] border-solid border-[1.5px] border-black text-[12px]">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <span class="text-[14px] leading-[19.6px]">Free shipping on orders over $49USD</span>
+                    </div>
+                    <div class="flex justify-start items-center gap-[10px]">
+                        <div
+                            class="flex justify-center items-center w-5 h-5 rounded-[50%] border-solid border-[1.5px] border-black text-[12px]">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <span class="text-[14px] leading-[19.6px]">Free + easy returns</span>
+                    </div>
 
+                </div>
+
+                <form action="" class="npd-form-product mb-[15px]">
+                    <select name="options" id="" required
+                        class="w-full bg-color-bg py-2 px-5 text-[14px] rounded-[5px] border-[1px] border-color-border mb-[10px]">
+                        <option class="bg-white" value="">Select size</option>
+                        <option class="bg-white" data-tag="product-2a" value="100">100ml</option>
+                        <option class="bg-white" data-tag="product-2b" value="500">500ml</option>
+                    </select>
+
+                    <div class="flex justify-between items-center p-[10px] border-color-border border-solid border-[1px]
+                    rounded-[5px] text-[14px] leading-[19.6px]">
+                        <input type="number" name="number" id="" value="1" min="1"
+                            class="border-color-border bg-color-bg rounded-[inherit] boder-solid border-[1px] leading-5 py-3 pr-[6px] pl-3 w-[70px]">
+
+                        <button type="submit"
+                            class="bg-sub-text py-3 px-5 text-white text-[14px] rounded-[inherit] transition-all duration-200 hover:bg-black">Add
+                            to Cart</button>
+                    </div>
+                </form>
+
+                <div class="mt-[70px]">
+                    <div
+                        class="flex justify-start gap-[30px] items-center text-sub-text font-semibold text-[16px] leading-[19.6px] mb-10">
+                        <div data-item="use"
+                            class="npd-product-info flex items-center justify-start gap-[10px] cursor-pointer">
+                            <div class="">
+                                <i class="npd-product-info-icon fa-solid fa-minus"></i>
+                            </div>
+                            <span class="">How to use?</span>
+                        </div>
+                        <div data-item="ingred"
+                            class="npd-product-info flex items-center justify-start gap-[10px] cursor-pointer">
+                            <div class="">
+                                <i class="npd-product-info-icon fa-solid fa-plus"></i>
+                            </div>
+                            <span class="">Ingredients</span>
+                        </div>
+                    </div>
+                    <div class="text-[14px] leading-[19.6px]">
+                        <div data-item="use" class="npd-product-content animate-appear">
+                            <p class="mb-[10px]">Here&apos;s a quick steps on how to use a face serum to get the most
+                                out of it.</p>
+                            <p class="mb-[10px]">1. Apply after cleansing and toning.</p>
+                            <p class="mb-[10px]">2. Warm a small amount between your palms.</p>
+                            <p class="mb-[10px]">3. Apply with light pressing motions, working from the center of the
+                                face outward
+                            </p>
+                        </div>
+                        <div data-item="ingred" class="npd-product-content hidden animate-appear">
+                            <p class="mb-[10px]">An upgrade on our refreshing fan-favorite, this oil-free gel-cream
+                                moisturizer with
+                                exclusive aloe bio-ferment and hyaluronic acid penetrates deep into the skin&apos;s
+                                surface.
+                            </p>
+                            <p class="mb-[10px]">
+                                Water\Aqua\Eau, Glycerin, Alcohol Denat., Ethylhexyl Salicylate, Homosalate, Butyl
+                                Methoxydibenzoylmethane, Octocrylene, Pentylene Glycol, Caprylyl Methicone,
+                                Biosaccharide
+                                Gum - 1, Ammonium Acryloyldimethyltaurate/Vp Copolymer, Cucumis Sativus (Cucumber) Fruit
+                                Extract, Sodium Hyaluronate, Thermus Thermophillus Ferment, Ethylbisiminomethylguaiacol
+                                Manganese Chloride, Ergothioneine, Tocopheryl Acetate, Tetrahexyldecyl Ascorbate,
+                                Cyclodextrin, Psidium Guajava (Guava) Fruit Extract.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- =============== end of cart account ============= -->
 
-
-        <!-- ===== video ===== -->
-        <div class="rounded-[10px] overflow-hidden h-[500px] ml:h-[200px] sm:h-[150px]">
-            <video autoplay muted loop class="w-full h-full object-cover">
-                <source src="../video/clip1.mp4" type="video/mp4">
-            </video>
-        </div>
-        <!-- end of video -->
-
-        <!-- products -->
-        <div class="py-[120px] md:py-[70px] sm:py-[60px]">
-            <div class="text-center">
-                <h2 class="npd-title-Tue">Products</h2>
-                <h2 class="npd-title-Melo">Healthy skin, wildly you</h2>
+        <!-- =============== reviews ========================== -->
+        <div class="max-w-[60%] pb-[120px] lg:max-w-full mx-auto">
+            <h2 class="font-Melodrama text-[56px] md:text-[40px] font-medium leadiing-[78.4px] mb-[10px]">Reviews</h2>
+            <div class="pb-[30px] border-transparent border-b-black border-[1px] mb-10">
+                <h2 class="font-Melodrama text-[18px] md:text-[16px] font-medium leading-[23.4px] mb-[10px]">Frances
+                    Guerrero</h2>
+                <div class="flex justify-between items-baseline">
+                    <h3
+                        class="font-Melodrama text-[28px] exs:text-xl md:text-2xl font-medium leading-[39.2px] mb-[10px]">
+                        A must-have product
+                    </h3>
+                    <div class="flex justify-center items-center">
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                    </div>
+                </div>
+                <p class="text-[17px] md:text-[14px] leading-[23.8px] mb-[10px]">
+                    "But in certain circumstances and owing to the claims of duty or the obligations of business it will
+                    frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man
+                    therefore always."
+                </p>
             </div>
+            <div class="pb-[30px] border-transparent border-b-black border-[1px] mb-10">
+                <h2 class="font-Melodrama text-[18px] md:text-[16px] font-medium leading-[23.4px] mb-[10px]">Larry
+                    Lawson</h2>
+                <div class="flex justify-between items-baseline">
+                    <h3
+                        class="font-Melodrama text-[28px] exs:text-xl md:text-2xl font-medium leading-[39.2px] mb-[10px]">
+                        Amazing...loved it
+                    </h3>
+                    <div class="flex justify-center items-center">
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                    </div>
+                </div>
+                <p class="text-[17px] md:text-[14px] leading-[23.8px] mb-[10px]">
+                    "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
+                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
+                    from repetition, injected humour, or non-characteristic words etc."
+                </p>
+            </div>
+            <div class="pb-[30px] border-transparent border-b-black border-[1px] mb-10">
+                <h2 class="font-Melodrama text-[18px] md:text-[16px] font-medium leading-[23.4px] mb-[10px]">Lori
+                    Stevens</h2>
+                <div class="flex justify-between items-baseline">
+                    <h3
+                        class="font-Melodrama text-[28px] exs:text-xl md:text-2xl font-medium leading-[39.2px] mb-[10px]">
+                        Highly recommended!
+                    </h3>
+                    <div class="flex justify-center items-center">
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                    </div>
+                </div>
+                <p class="text-[17px] md:text-[14px] leading-[23.8px] mb-[10px]">
+                    "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
+                    their exact original form."
+                </p>
+            </div>
+            <div class="pb-[30px] border-transparent border-b-black border-[1px] mb-10">
+                <h2 class="font-Melodrama text-[18px] md:text-[16px] font-medium leading-[23.4px] mb-[10px]">Bryan
+                    Knight</h2>
+                <div class="flex justify-between items-baseline">
+                    <h3
+                        class="font-Melodrama text-[28px] exs:text-xl md:text-2xl font-medium leading-[39.2px] mb-[10px]">
+                        Makes my skin glow!
+                    </h3>
+                    <div class="flex justify-center items-center">
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                        <i class="fa-solid fa-star text-sub-text text-[14px] exs:text-[12px] leading-[19.6px]"></i>
+                    </div>
+                </div>
+                <p class="text-[17px] md:text-[14px] leading-[23.8px] mb-[10px]">
+                    "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                    professor at Hampden-Sydney College in Virginia, looked up one of the more."
+                </p>
+            </div>
+        </div>
+        <!-- ============ end of reviews ============= -->
+
+        <!-- related products -->
+        <div class="pb-[120px]">
+            <h2 class="font-Melodrama text-[70px] sm:text-[50px] font-medium mb-[10px]">Related product</h2>
             <div class="grid gap-[15px] grid-cols-4 ml:grid-cols-2 es:grid-cols-1">
                 <div class="flex flex-col bg-color-sub-bg p-[10px] rounded-[10px] overflow-hidden">
                     <a href="./product-1.html" class="block overflow-hidden rounded-[inherit] pt-[100%] relative">
@@ -237,16 +377,15 @@
                     <div class="flex-grow flex flex-col justify-between">
                         <div class="pt-5 px-[15px] pb-[15px]">
                             <div class="flex justify-between items-center mb-[6px]">
-                                <span class="uppercase text-[14px]">
+                                <a href="./cleanser.html" class="uppercase text-[14px] transition-all duration-200 hover:underline">
                                     CLEANSER
-                                </span>
+                                </a>
                                 <p class="text-[15px] font-semibold">
                                     $ 56.00 USD
                                 </p>
                             </div>
                             <a href="./product-1.html"
-                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">anti
-                                acne face wash</a>
+                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Anti Acne Face Wash</a>
                         </div>
                         <a href="./product-1.html" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
                     </div>
@@ -266,16 +405,15 @@
                     <div class="flex-grow flex flex-col justify-between">
                         <div class="pt-5 px-[15px] pb-[15px]">
                             <div class="flex justify-between items-center mb-[6px]">
-                                <span class="uppercase text-[14px]">
-                                    serums
-                                </span>
+                                <a href="./serum.html" class="uppercase text-[14px] transition-all duration-200 hover:underline">
+                                    SERUMS
+                                </a>
                                 <p class="text-[15px] font-semibold">
                                     $ 34.00 USD
                                 </p>
                             </div>
                             <a href="./product-2.html"
-                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Vitamin
-                                C Hand & Nail Cream</a>
+                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Vitamin C Hand & Nail Cream</a>
                         </div>
                         <a href="./product-2.html" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
                     </div>
@@ -295,193 +433,25 @@
                     <div class="flex-grow flex flex-col justify-between">
                         <div class="pt-5 px-[15px] pb-[15px]">
                             <div class="flex justify-between items-center mb-[6px]">
-                                <span class="uppercase text-[14px]">
-                                    body wash
-                                </span>
+                                <a href="./bodywash.html" class="uppercase text-[14px] transition-all duration-200 hover:underline">
+                                    BODY WASH
+                                </a>
                                 <p class="text-[15px] font-semibold">
                                     $ 67.00 USD
                                 </p>
                             </div>
                             <a href="./product-3.html"
-                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Vitamin
-                                C Clay Face Mask</a>
+                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">Vitamin C Clay Face Mask</a>
                         </div>
                         <a href="./product-3.html" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
                     </div>
                 </div>
-                <div class="flex flex-col bg-color-sub-bg p-[10px] rounded-[10px] overflow-hidden">
-                    <a href="./product-4.html" class="block overflow-hidden rounded-[inherit] pt-[100%] relative">
-                        <div class="absolute left-0 top-0 bottom-0 right-0 group h-full w-full">
-                            <div
-                                class="absolute left-0 right-0 top-0 bottom-0 z-[1] transition-all duration-500 group-hover:opacity-0 group-hover:invisible">
-                                <img src="../images/product_4.jpg" alt="" class="w-full h-full object-cover">
-                            </div>
-                            <div class="absolute left-0 right-0 top-0 bottom-0 z-[0]">
-                                <img src="../images/product_4-1.jpg" alt="" class="w-full h-full object-cover">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="flex-grow flex flex-col justify-between">
-                        <div class="pt-5 px-[15px] pb-[15px]">
-                            <div class="flex justify-between items-center mb-[6px]">
-                                <span class="uppercase text-[14px]">
-                                    night dream
-                                </span>
-                                <p class="text-[15px] font-semibold">
-                                    $ 89.00 USD
-                                </p>
-                            </div>
-                            <a href="./product-4.html"
-                                class="capitalize text-black hover:text-sub-text no-underline hover:underline text-xl leading-[26px] transition-all duration-200">10
-                                In 1 Active Miracle</a>
-                        </div>
-                        <a href="./product-4.html" class="npd-btn !w-full !rounded-[5px] text-center">Shop now</a>
-                    </div>
-                </div>
-
             </div>
         </div>
-        <!-- end of products -->
+        <!-- ====== end of related products ===== -->
 
-        <!-- fearture -->
-        <div class="grid grid-cols-2 md:grid-cols-1 gap-[100px] ml:gap-10">
-            <div class="rounded-[10px] overflow-hidden">
-                <img src="../images/feature_1.jpg" alt="" class="w-full h-full object-cover">
-            </div>
-            <div class="text-center">
-                <h2 class="npd-title-Tue">Feature</h2>
-                <h2 class="npd-title-Melo">Innovation-led Products</h2>
-                <p class="leading-[19.6px] text-[14px] mt-[15px] mb-[50px] md:mb-5 text-black">Temporibus autem
-                    quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
-                    repudiandae sint.</p>
-                <a href="" class="npd-btn mx-auto">Read more</a>
-            </div>
-        </div>
-        <!-- end of feature -->
 
-        <!-- brand -->
-        <div class="py-[200px] ml:py-20 md:py-[60px] text-center w-[65%] md:w-full mx-auto">
-            <div class="mb-20">
-                <p data-brand="1" class="npd-brand-item active">"There are
-                    many variations of passages of Lorem Ipsum
-                    available, but the majority have in some
-                    form, by injected humour, or randomised words which"</p>
-                <p data-brand="2" class="npd-brand-item">"Generate
-                    Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from
-                    repetition, injected humour, or non-characteristic"</p>
-                <p data-brand="3" class="npd-brand-item">"Nam libero
-                    tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat
-                    facere possimus, omnis voluptas assumenda"</p>
-                <p data-brand="4" class="npd-brand-item">"Shrinking
-                    from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when
-                    our power of choice is untrammelled and when nothing"</p>
-            </div>
-            <div class="flex justify-center items-center flex-wrap sm:gap-[5px]">
-                <div class="h-[40px] py-[9px] px-[30px] sm:px-[10px]">
-                    <img data-brand="1" src="../images/brand1.svg" alt="" class="npd-brand-img active">
-                </div>
-                <div class="h-[40px] py-[9px] px-[30px] sm:px-[10px]">
-                    <img data-brand="2" src="../images/brand2.svg" alt="" class="npd-brand-img">
-                </div>
-                <div class="h-[40px] py-[9px] px-[30px] sm:px-[10px]">
-                    <img data-brand="3" src="../images/brand3.svg" alt="" class="npd-brand-img">
-                </div>
-                <div class="h-[40px] py-[9px] px-[30px] sm:px-[10px]">
-                    <img data-brand="4" src="../images/brand4.svg" alt="" class="npd-brand-img">
-                </div>
-            </div>
-        </div>
-        <!-- end of brand -->
 
-        <!-- slideImage -->
-        <div class="">
-            <div class="swiper ml2:!mx-[-50px] ml:hidden">
-                <div class="swiper-wrapper !ml:flex-wrap ml:gap-[15px]">
-                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
-                        <img src="../images/swiper1.jpg" data-magnify-src="../images/swiper1.jpg" alt=""
-                            class="npd-zoom-img w-full h-full object-cover zoom">
-                    </div>
-                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
-                        <img src="../images/swiper2.jpg" data-magnify-src="../images/swiper2.jpg" alt=""
-                            class="npd-zoom-img w-full h-full object-cover zoom">
-                    </div>
-                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
-                        <img src="../images/swiper3.jpg" data-magnify-src="../images/swiper3.jpg" alt=""
-                            class="npd-zoom-img w-full h-full object-cover zoom">
-                    </div>
-                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
-                        <img src="../images/swiper4.jpg" data-magnify-src="../images/swiper4.jpg" alt=""
-                            class="npd-zoom-img w-full h-full object-cover zoom">
-                    </div>
-                    <div class="swiper-slide xl:!h-[460px] xl:!w-[460px] !h-[70vh] !w-[70vh]">
-                        <img src="../images/swiper5.jpg" data-magnify-src="../images/swiper5.jpg" alt=""
-                            class="npd-zoom-img w-full h-full object-cover zoom">
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap ml2:hidden">
-                <div class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px]">
-                    <img src="../images/swiper1.jpg" data-magnify-src="../images/swiper1.jpg" alt=""
-                        class="w-ful h-full zoom">
-                </div>
-                <div class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px]">
-                    <img src="../images/swiper2.jpg" data-magnify-src="../images/swiper2.jpg" alt=""
-                        class="w-ful h-full zoom">
-                </div>
-                <div class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px]">
-                    <img src="../images/swiper3.jpg" data-magnify-src="../images/swiper3.jpg" alt=""
-                        class="w-ful h-full zoom">
-                </div>
-                <div class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px]">
-                    <img src="../images/swiper4.jpg" data-magnify-src="../images/swiper4.jpg" alt=""
-                        class="w-ful h-full zoom">
-                </div>
-                <div
-                    class="ml:basis-1/2 ml:w-1/2 es:basis-full es:w-full ml:px-[10px] ml:py-[10px] ml:ml-[25%] es:ml-0">
-                    <img src="../images/swiper5.jpg" data-magnify-src="../images/swiper5.jpg" alt=""
-                        class="w-ful h-full zoom">
-                </div>
-            </div>
-        </div>
-        <!-- end of slideimg -->
-
-        <!-- Skinblog -->
-        <div class="mb-[120px]">
-            <h2 class="npd-title-Melo text-center mb-[10px] mt-8">
-                Skinn blog
-            </h2>
-
-            <div class="grid grid-cols-2 ml:grid-cols-1 gap-[50px]">
-                <div class="grid grid-cols-2 gap-[30px] sm:grid-cols-1">
-                    <a href="" class="">
-                        <img src="../images/blog1.jpg" alt="" class="rounded-[10px]">
-                    </a>
-                    <div class="flex flex-col justify-between">
-                        <a href=""
-                            class="font-Melodrama text-black hover:text-sub-text no-underline hover:underline text-[28px] sm:text-[30px] leading-[36.4px] transition-all duration-200 sm:text-center">
-                            Which skinceuticals vitamin c serum is right for you?
-                        </a>
-                        <a href="" class="npd-btn sm:mt-[10px] sm:mx-auto">Read more</a>
-                    </div>
-
-                </div>
-                <div class="grid grid-cols-2 gap-[30px] sm:grid-cols-1">
-                    <a href="" class="">
-                        <img src="../images/blog2.jpg" alt="" class="rounded-[10px]">
-                    </a>
-                    <div class="flex flex-col justify-between">
-                        <a href=""
-                            class="font-Melodrama text-black hover:text-sub-text no-underline hover:underline text-[28px] sm:text-[30px] leading-[36.4px] transition-all duration-200 sm:text-center">
-                            Everything you need to know about your skin
-                        </a>
-                        <a href="" class="npd-btn sm:mt-[10px] sm:mx-auto">Read more</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- end of skinblog -->
 
 
         <footer
@@ -586,59 +556,74 @@
 
             </div>
         </footer>
-    </div>
 
-    <script src="../js/jquery.magnify.js"></script>
+        <!-- ================= thumb gallery ===================== -->
+
+        <div id="npd-thumb-gallery"
+            class="invisible opacity-0 transition-all duration-150 ease-linear fixed top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,0.9)] z-50 flex flex-col justify-center items-center">
+            <div id="npd-thumb-close" class="absolute top-4 right-5 z-[99] cursor-pointer text-white text-[20px]">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="md:!hidden absolute !text-white top-1/2 -translate-y-1/2 left-0 swiper-button-next"></div>
+            <div class="md:!hidden absolute !text-white top-1/2 -translate-y-1/2  right-0 swiper-button-prev"></div>
+
+            <div
+                class="swiper mySwiper2 max-w-[40vw] md:max-w-[60vw] max-h-[84vh] md:min-h-[70vh] sm:max-w-[80vw] sm:min-h-[65vh] ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../images/product_2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/product_2-1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/product_2-2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/product_2-3.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper w-[25vw] md:w-[45vw] sm:w-[65vw] h-[10vh] mt-[10px]">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../images/product_2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/product_2-1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/product_2-2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/product_2-3.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../js/main.js" type="module"></script>
-
     <script>
-        $(document).ready(function () {
-            $('.zoom').magnify({
-                speed: 100,
-                magnifiedWidth: 650,
-                magnifiedHeight: 650,
-                timeout: 2,
-            });
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+            grabbing: true,
         });
-    </script>
-    <script>
-        (function () {
-            "use-strict";
-            let swiper;
-            function enableSwiper() {
-                swiper = new Swiper(".swiper", {
-                    slidesPerView: 3,
-                    spaceBetween: 10,
-                    mousewheel: true,
-                    invert: true,
-                    loop: true,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                    breakpoints: {
-                        992: {
-                            spaceBetween: 0,
-                        }
-                    }
-                });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 0,
+            speed: 500,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            thumbs: {
+                swiper: swiper
             }
-
-            function WidthChange(breakpoint) {
-                if (breakpoint.matches) {
-                    return enableSwiper();
-                } else {
-                    if (swiper !== undefined) swiper.destroy(true, true);
-                }
-            }
-
-            if (matchMedia) {
-                const breakpoint = window.matchMedia("(min-width: 992px)");
-                breakpoint.addListener(WidthChange);
-                WidthChange(breakpoint);
-            }
-        })()
+        });
     </script>
 </body>
 
